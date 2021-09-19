@@ -1,0 +1,17 @@
+{
+    "definitions": {},
+    "components": [],
+    "ports": [
+        {
+            "name": "input",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "output",
+            "direction": "output",
+            "type": "Vector3"
+        }
+    ],
+    "connections": []
+}

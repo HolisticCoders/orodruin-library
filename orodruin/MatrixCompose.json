@@ -1,0 +1,37 @@
+{
+    "definitions": {},
+    "components": [],
+    "ports": [
+        {
+            "name": "translate",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "euler_rotation",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "quaternion_rotation",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "scale",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "shear",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "output",
+            "direction": "output",
+            "type": "Matrix4"
+        }
+    ],
+    "connections": []
+}

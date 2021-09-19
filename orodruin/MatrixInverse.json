@@ -1,0 +1,17 @@
+{
+    "definitions": {},
+    "components": [],
+    "ports": [
+        {
+            "name": "input",
+            "direction": "input",
+            "type": "Matrix4"
+        },
+        {
+            "name": "output",
+            "direction": "output",
+            "type": "Matrix4"
+        }
+    ],
+    "connections": []
+}

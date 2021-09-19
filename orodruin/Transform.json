@@ -1,0 +1,43 @@
+{
+    "definitions": {},
+    "components": [],
+    "ports": [
+        {
+            "name": "translate",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "rotate",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "scale",
+            "direction": "input",
+            "type": "Vector3"
+        },
+        {
+            "name": "rest_matrix",
+            "direction": "input",
+            "type": "Matrix4"
+        },
+        {
+            "name": "inherits_transform",
+            "direction": "input",
+            "type": "bool"
+        },
+
+        {
+            "name": "world_matrix",
+            "direction": "output",
+            "type": "Matrix4"
+        },
+        {
+            "name": "matrix",
+            "direction": "output",
+            "type": "Matrix4"
+        }
+    ],
+    "connections": []
+}

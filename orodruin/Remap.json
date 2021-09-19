@@ -1,0 +1,37 @@
+{
+    "definitions": {},
+    "components": [],
+    "ports": [
+        {
+            "name": "input",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "old_min",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "old_max",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "new_min",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "new_max",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "output",
+            "direction": "output",
+            "type": "float"
+        }
+    ],
+    "connections": []
+}

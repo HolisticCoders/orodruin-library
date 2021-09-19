@@ -1,0 +1,22 @@
+{
+    "definitions": {},
+    "components": [],
+    "ports": [
+        {
+            "name": "input1",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "input2",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "output",
+            "direction": "output",
+            "type": "float"
+        }
+    ],
+    "connections": []
+}
