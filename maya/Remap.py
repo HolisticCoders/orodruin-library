@@ -1,15 +1,15 @@
 from dataclasses import dataclass
 from typing import Dict
 from maya import cmds
-from orodruin_maya import OMComponent
+from orodruin_maya import OMNode
 
 @dataclass
-class Remap(OMComponent):
+class Remap(OMNode):
 
     def build(self):
         self._input_node = cmds.createNode(
             "setRange",
-            name=self._component.name(),
+            name=self._node.name(),
         )
 
         self._output_node = self._input_node

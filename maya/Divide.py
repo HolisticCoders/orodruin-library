@@ -1,15 +1,15 @@
 from dataclasses import dataclass
 from typing import Dict
 from maya import cmds
-from orodruin_maya import OMComponent
+from orodruin_maya import OMNode
 
 @dataclass
-class Divide(OMComponent):
+class Divide(OMNode):
 
     def build(self):
         self._input_node = cmds.createNode(
             "multiplyDivide",
-            name=self._component.name(),
+            name=self._node.name(),
         )
         cmds.setAttr(f"{self._input_node}.operation", 2)
 
