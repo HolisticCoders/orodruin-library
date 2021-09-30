@@ -9,7 +9,7 @@ class MatrixCompose(OMNode):
     def build(self):
         self._input_node = cmds.createNode(
             "composeMatrix",
-            name=self._node.name(),
+            name=self._name,
         )
 
         self._output_node = self._input_node

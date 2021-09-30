@@ -9,7 +9,7 @@ class Joint(OMNode):
     def build(self):
         self._input_node = cmds.createNode(
             "joint",
-            name=self._node.name(),
+            name=self._name,
         )
 
         self._output_node = self._input_node

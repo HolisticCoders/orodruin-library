@@ -9,7 +9,7 @@ class MatrixInverse(OMNode):
     def build(self):
         self._input_node = cmds.createNode(
             "inverseMatrix",
-            name=self._node.name(),
+            name=self._name,
         )
 
         self._output_node = self._input_node

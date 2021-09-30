@@ -9,7 +9,7 @@ class Remap(OMNode):
     def build(self):
         self._input_node = cmds.createNode(
             "setRange",
-            name=self._node.name(),
+            name=self._name,
         )
 
         self._output_node = self._input_node

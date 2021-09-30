@@ -8,7 +8,7 @@ class Guide(OMNode):
 
     def build(self):
         self._input_node = cmds.spaceLocator(
-            name=self._node.name(),
+            name=self._name,
         )[0]
 
         self._output_node = self._input_node

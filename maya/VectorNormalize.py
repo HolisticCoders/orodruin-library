@@ -9,7 +9,7 @@ class VectorNormalize(OMNode):
     def build(self):
         self._input_node = cmds.createNode(
             "vectorProduct",
-            name=self._node.name(),
+            name=self._name,
         )
         cmds.setAttr(f"{self._input_node}.operation", 0)
 
