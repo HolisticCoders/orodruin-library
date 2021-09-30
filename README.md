@@ -1,5 +1,5 @@
 # Orodruin Library
-A Component library for Orodruin
+A Node library for Orodruin
 
 # Installation.
 - Clone this repository anywhere you want
