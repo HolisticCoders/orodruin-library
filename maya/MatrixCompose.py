@@ -19,9 +19,25 @@ class MatrixCompose(OMNode):
         """Return a dictionary mapping the ports names and their maya attributes."""
         return {
             "translate": "inputTranslate",
-            "euler_rotation": "inputRotate",
-            "quaternion_rotation": "inputQuat",
+            "translateX": "inputTranslateX",
+            "translateY": "inputTranslateY",
+            "translateZ": "inputTranslateZ",
+            "euler": "inputRotate",
+            "eulerX": "inputRotateX",
+            "eulerY": "inputRotateY",
+            "eulerZ": "inputRotateZ",
+            "quaternion": "inputQuat",
+            "quaternionX": "inputQuatX",
+            "quaternionY": "inputQuatY",
+            "quaternionZ": "inputQuatZ",
+            "quaternionW": "inputQuatW",
             "scale": "inputScale",
+            "scaleX": "inputScaleX",
+            "scaleY": "inputScaleY",
+            "scaleZ": "inputScaleZ",
             "shear": "inputShear",
+            "shearX": "inputShearX",
+            "shearY": "inputShearY",
+            "shearZ": "inputShearZ",
             "output": "outputMatrix"
         }

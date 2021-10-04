@@ -5,12 +5,46 @@
         {
             "name": "input",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "inputX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "inputY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "inputZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
             "name": "output",
             "direction": "output",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "outputX",
+                    "direction": "output",
+                    "type": "float"
+                },
+                {
+                    "name": "outputY",
+                    "direction": "output",
+                    "type": "float"
+                },
+                {
+                    "name": "outputZ",
+                    "direction": "output",
+                    "type": "float"
+                }
+            ]
         }
     ],
     "connections": []

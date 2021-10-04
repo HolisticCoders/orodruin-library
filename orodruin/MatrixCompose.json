@@ -5,27 +5,117 @@
         {
             "name": "translate",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "translateX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "translateY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "translateZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
-            "name": "euler_rotation",
+            "name": "euler",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "eulerX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "eulerY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "eulerZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
-            "name": "quaternion_rotation",
+            "name": "quaternion",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Quaternion",
+            "children": [
+                {
+                    "name": "quaternionX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "quaternionY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "quaternionZ",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "quaternionW",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
             "name": "scale",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "scaleX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "scaleY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "scaleZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
             "name": "shear",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "shearX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "shearY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "shearZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
             "name": "output",

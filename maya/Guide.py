@@ -18,8 +18,17 @@ class Guide(OMNode):
         """Return a dictionary mapping the ports names and their maya attributes."""
         return {
             "translate": "translate",
+            "translateX": "translateX",
+            "translateY": "translateY",
+            "translateZ": "translateZ",
             "rotate": "rotate",
+            "rotateX": "rotateX",
+            "rotateY": "rotateY",
+            "rotateZ": "rotateZ",
             "scale": "scale",
+            "scaleX": "scaleX",
+            "scaleY": "scaleY",
+            "scaleZ": "scaleZ",
             "rest_matrix": "offsetParentMatrix",
             "inherits_transform": "inheritsTransform",
             "world_matrix": "worldMatrix",

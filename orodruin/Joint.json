@@ -5,17 +5,68 @@
         {
             "name": "translate",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children":[
+                {
+                    "name": "translateX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "translateY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "translateZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
             "name": "rotate",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children":[
+                {
+                    "name": "rotateX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "rotateY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "rotateZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
             "name": "scale",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children":[
+                {
+                    "name": "scaleX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "scaleY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "scaleZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
             "name": "rest_matrix",
