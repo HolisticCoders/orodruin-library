@@ -5,7 +5,24 @@
         {
             "name": "input1",
             "direction": "input",
-            "type": "Vector3"
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "input1X",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "input1Y",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "input1Z",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
         },
         {
             "name": "input2",
