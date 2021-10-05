@@ -19,7 +19,13 @@ class VectorNormalize(OMNode):
     def maya_attribute_map() -> Dict[str, str]:
         """Return a dictionary mapping the ports names and their maya attributes."""
         return {
-            "input": "input1",
+            "input": "input",
+            "inputX": "inputX",
+            "inputY": "inputY",
+            "inputZ": "inputZ",
             "output": "output",
+            "outputX": "outputX",
+            "outputY": "outputY",
+            "outputZ": "outputZ",
         }
 
