@@ -1,0 +1,105 @@
+{
+    "definitions": {},
+    "nodes": [],
+    "ports": [
+        {
+            "name": "angle_a",
+            "direction": "output",
+            "type": "float"
+        },
+        {
+            "name": "angle_b",
+            "direction": "output",
+            "type": "float"
+        },
+        {
+            "name": "point_a",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "point_aX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "point_aY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "point_aZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        },
+        {
+            "name": "point_b",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "point_bX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "point_bY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "point_bZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        },
+        {
+            "name": "point_c",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "point_cX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "point_cY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "point_cZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        },
+        {
+            "name": "handle",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "handleX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "handleY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "handleZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        }
+    ],
+    "connections": []
+}
