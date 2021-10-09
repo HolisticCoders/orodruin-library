@@ -1,0 +1,105 @@
+{
+    "definitions": {},
+    "nodes": [],
+    "ports": [
+        {
+            "name": "base_matrix",
+            "direction": "input",
+            "type": "Matrix4"
+        },
+        {
+            "name": "output",
+            "direction": "output",
+            "type": "Matrix4"
+        },
+        {
+            "name": "aim_axis",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "aim_axisX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "aim_axisY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "aim_axisZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        },
+        {
+            "name": "aim_vector",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "aim_vectorX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "aim_vectorY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "aim_vectorZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        },
+        {
+            "name": "up_axis",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "up_axisX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "up_axisY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "up_axisZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        },
+        {
+            "name": "up_vector",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "up_vectorX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "up_vectorY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "up_vectorZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        }
+    ],
+    "connections": []
+}

@@ -1,0 +1,61 @@
+{
+    "definitions": {},
+    "nodes": [],
+    "ports": [
+        {
+            "name": "axis",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "axisX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "axisY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "axisZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        },
+        {
+            "name": "angle",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "output",
+            "direction": "output",
+            "type": "Quaternion",
+            "children": [
+                {
+                    "name": "outputX",
+                    "direction": "output",
+                    "type": "float"
+                },
+                {
+                    "name": "outputY",
+                    "direction": "output",
+                    "type": "float"
+                },
+                {
+                    "name": "outputZ",
+                    "direction": "output",
+                    "type": "float"
+                },
+                {
+                    "name": "outputW",
+                    "direction": "output",
+                    "type": "float"
+                }
+            ]
+        }
+    ],
+    "connections": []
+}

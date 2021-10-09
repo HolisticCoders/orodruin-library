@@ -1,0 +1,776 @@
+{
+    "definitions": {},
+    "nodes": [
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose1",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::Aim",
+            "name": "Aim1",
+            "ports": {
+                "base_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "aim_axis": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "aim_axisX": 0.0,
+                "aim_axisY": 0.0,
+                "aim_axisZ": 0.0,
+                "aim_vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "aim_vectorX": 0.0,
+                "aim_vectorY": 0.0,
+                "aim_vectorZ": 0.0,
+                "up_axis": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "up_axisX": 0.0,
+                "up_axisY": 0.0,
+                "up_axisZ": 0.0,
+                "up_vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "up_vectorX": 0.0,
+                "up_vectorY": 0.0,
+                "up_vectorZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::VectorCross",
+            "name": "plane_normal",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "normalize": false,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixMultiply",
+            "name": "MatrixMultiply1",
+            "ports": {
+                "input1": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "input2": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::Aim",
+            "name": "Aim",
+            "ports": {
+                "base_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "aim_axis": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "aim_axisX": 0.0,
+                "aim_axisY": 0.0,
+                "aim_axisZ": 0.0,
+                "aim_vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "aim_vectorX": 0.0,
+                "aim_vectorY": 0.0,
+                "aim_vectorZ": 0.0,
+                "up_axis": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "up_axisX": 0.0,
+                "up_axisY": 0.0,
+                "up_axisZ": 0.0,
+                "up_vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "up_vectorX": 0.0,
+                "up_vectorY": 0.0,
+                "up_vectorZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose2",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixInverse",
+            "name": "MatrixInverse1",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixMultiply",
+            "name": "MatrixMultiply",
+            "ports": {
+                "input1": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "input2": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixInverse",
+            "name": "MatrixInverse",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::VectorSubstract",
+            "name": "bc",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::VectorSubstract",
+            "name": "ab",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0
+            }
+        }
+    ],
+    "ports": [
+        {
+            "name": "rest_matrix_a",
+            "direction": "output",
+            "type": "Matrix4"
+        },
+        {
+            "name": "rest_matrix_b",
+            "direction": "output",
+            "type": "Matrix4"
+        },
+        {
+            "name": "rest_matrix_c",
+            "direction": "output",
+            "type": "Matrix4"
+        },
+        {
+            "name": "guide_a",
+            "direction": "input",
+            "type": "Matrix4"
+        },
+        {
+            "name": "guide_b",
+            "direction": "input",
+            "type": "Matrix4"
+        },
+        {
+            "name": "guide_c",
+            "direction": "input",
+            "type": "Matrix4"
+        }
+    ],
+    "connections": [
+        [
+            "MatrixDecompose1.translate",
+            "ab.input1"
+        ],
+        [
+            "MatrixDecompose1.translate",
+            "bc.input2"
+        ],
+        [
+            "MatrixDecompose.translate",
+            "ab.input2"
+        ],
+        [
+            "Aim1.output",
+            "MatrixInverse1.input"
+        ],
+        [
+            "Aim1.output",
+            "MatrixMultiply.input1"
+        ],
+        [
+            "bc.output",
+            "Aim1.aim_vector"
+        ],
+        [
+            "plane_normal.output",
+            "Aim1.up_vector"
+        ],
+        [
+            "bc.output",
+            "plane_normal.input1"
+        ],
+        [
+            "ab.output",
+            "plane_normal.input2"
+        ],
+        [
+            "plane_normal.output",
+            "Aim.up_vector"
+        ],
+        [
+            "MatrixInverse1.output",
+            "MatrixMultiply1.input2"
+        ],
+        [
+            "MatrixMultiply1.output",
+            ".rest_matrix_c"
+        ],
+        [
+            "Aim.output",
+            ".rest_matrix_a"
+        ],
+        [
+            "Aim.output",
+            "MatrixInverse.input"
+        ],
+        [
+            "ab.output",
+            "Aim.aim_vector"
+        ],
+        [
+            "MatrixDecompose2.translate",
+            "bc.input1"
+        ],
+        [
+            "MatrixInverse.output",
+            "MatrixMultiply.input2"
+        ],
+        [
+            "MatrixMultiply.output",
+            ".rest_matrix_b"
+        ],
+        [
+            ".guide_b",
+            "MatrixDecompose1.input"
+        ],
+        [
+            ".guide_a",
+            "MatrixDecompose.input"
+        ],
+        [
+            ".guide_c",
+            "MatrixMultiply1.input1"
+        ],
+        [
+            ".guide_c",
+            "MatrixDecompose2.input"
+        ],
+        [
+            ".guide_b",
+            "Aim1.base_matrix"
+        ],
+        [
+            ".guide_a",
+            "Aim.base_matrix"
+        ]
+    ]
+}

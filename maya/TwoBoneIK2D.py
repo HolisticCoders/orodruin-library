@@ -49,8 +49,98 @@ class TwoBoneIK2D(OMGroupNode):
     def build(self) -> None:
         super().build()
 
-        print("wtf")
+        # The creation of the expression nodes needs the maya attributes to exist
+        # so we create them before the orodruin ports are created.
+        self._create_maya_attributes()
+
         self._expression_template = EXPRESSION_TEMPLATE.format(
             self._input_node, self._output_node
         )
-        self._expression_node = cmds.expression(s=self._expression_template)
+        self._expression_node = cmds.expression(
+            string=self._expression_template,
+            name=self.__class__.__name__ + "_EXP",
+        )
+
+    def _create_maya_attributes(self) -> None:
+        cmds.addAttr(self._output_node, longName="angle_a", attributeType="double")
+        cmds.addAttr(self._output_node, longName="angle_b", attributeType="double")
+
+        cmds.addAttr(self._input_node, longName="point_a", attributeType="double3")
+        cmds.addAttr(
+            self._input_node,
+            longName="point_aX",
+            attributeType="double",
+            parent="point_a",
+        )
+        cmds.addAttr(
+            self._input_node,
+            longName="point_aY",
+            attributeType="double",
+            parent="point_a",
+        )
+        cmds.addAttr(
+            self._input_node,
+            longName="point_aZ",
+            attributeType="double",
+            parent="point_a",
+        )
+
+        cmds.addAttr(self._input_node, longName="point_b", attributeType="double3")
+        cmds.addAttr(
+            self._input_node,
+            longName="point_bX",
+            attributeType="double",
+            parent="point_b",
+        )
+        cmds.addAttr(
+            self._input_node,
+            longName="point_bY",
+            attributeType="double",
+            parent="point_b",
+        )
+        cmds.addAttr(
+            self._input_node,
+            longName="point_bZ",
+            attributeType="double",
+            parent="point_b",
+        )
+
+        cmds.addAttr(self._input_node, longName="point_c", attributeType="double3")
+        cmds.addAttr(
+            self._input_node,
+            longName="point_cX",
+            attributeType="double",
+            parent="point_c",
+        )
+        cmds.addAttr(
+            self._input_node,
+            longName="point_cY",
+            attributeType="double",
+            parent="point_c",
+        )
+        cmds.addAttr(
+            self._input_node,
+            longName="point_cZ",
+            attributeType="double",
+            parent="point_c",
+        )
+
+        cmds.addAttr(self._input_node, longName="handle", attributeType="double3")
+        cmds.addAttr(
+            self._input_node,
+            longName="handleX",
+            attributeType="double",
+            parent="handle",
+        )
+        cmds.addAttr(
+            self._input_node,
+            longName="handleY",
+            attributeType="double",
+            parent="handle",
+        )
+        cmds.addAttr(
+            self._input_node,
+            longName="handleZ",
+            attributeType="double",
+            parent="handle",
+        )
