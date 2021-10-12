@@ -1,0 +1,2090 @@
+{
+    "definitions": {},
+    "nodes": [
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose8",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose4",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::Locator",
+            "name": "Locator2",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::VectorSubstract",
+            "name": "VectorSubstract3",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::VectorSubstract",
+            "name": "VectorSubstract",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::QuaternionFromAxisAngle",
+            "name": "QuaternionFromAxisAngle1",
+            "ports": {
+                "axis": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "axisX": 0.0,
+                "axisY": 0.0,
+                "axisZ": 0.0,
+                "angle": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0,
+                "outputW": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixCompose",
+            "name": "MatrixCompose1",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0,
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::Locator",
+            "name": "Locator",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::Control",
+            "name": "ik_pv_CON",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::VectorLength",
+            "name": "VectorLength",
+            "ports": {
+                "input": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "inputX": 0.0,
+                "inputY": 0.0,
+                "inputZ": 0.0,
+                "output": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::Joint",
+            "name": "Joint2",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::VectorCross",
+            "name": "VectorCross",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "normalize": false,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::Control",
+            "name": "ik_end_CON",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::QuaternionFromAxisAngle",
+            "name": "QuaternionFromAxisAngle",
+            "ports": {
+                "axis": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "axisX": 0.0,
+                "axisY": 0.0,
+                "axisZ": 0.0,
+                "angle": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0,
+                "outputW": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose5",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose1",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::VectorLength",
+            "name": "VectorLength1",
+            "ports": {
+                "input": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "inputX": 0.0,
+                "inputY": 0.0,
+                "inputZ": 0.0,
+                "output": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::VectorSubstract",
+            "name": "VectorSubstract1",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixCompose",
+            "name": "MatrixCompose",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0,
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose7",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose2",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::Locator",
+            "name": "Locator1",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::Aim",
+            "name": "Aim",
+            "ports": {
+                "base_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "output": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "aim_axis": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "aim_axisX": 0.0,
+                "aim_axisY": 0.0,
+                "aim_axisZ": 0.0,
+                "aim_vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "aim_vectorX": 0.0,
+                "aim_vectorY": 0.0,
+                "aim_vectorZ": 0.0,
+                "up_axis": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "up_axisX": 0.0,
+                "up_axisY": 0.0,
+                "up_axisZ": 0.0,
+                "up_vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "up_vectorX": 0.0,
+                "up_vectorY": 0.0,
+                "up_vectorZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::MatrixDecompose",
+            "name": "MatrixDecompose6",
+            "ports": {
+                "input": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "euler": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "eulerX": 0.0,
+                "eulerY": 0.0,
+                "eulerZ": 0.0,
+                "quaternion": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "quaternionX": 0.0,
+                "quaternionY": 0.0,
+                "quaternionZ": 0.0,
+                "quaternionW": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "shear": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "shearX": 0.0,
+                "shearY": 0.0,
+                "shearZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::VectorSubstract",
+            "name": "VectorSubstract2",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::Joint",
+            "name": "Joint1",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::TwoBoneRestSolver",
+            "name": "TwoBoneRestSolver",
+            "ports": {
+                "rest_matrix_a": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "rest_matrix_b": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "rest_matrix_c": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "guide_a": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "guide_b": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "guide_c": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::Control",
+            "name": "ik_base_CON",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::Joint",
+            "name": "Joint",
+            "ports": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "translateX": 0.0,
+                "translateY": 0.0,
+                "translateZ": 0.0,
+                "rotate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotateX": 0.0,
+                "rotateY": 0.0,
+                "rotateZ": 0.0,
+                "scale": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scaleX": 0.0,
+                "scaleY": 0.0,
+                "scaleZ": 0.0,
+                "rest_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "inherits_transform": false,
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "orodruin-library::TwoBoneIK2D",
+            "name": "TwoBoneIK2D",
+            "ports": {
+                "base": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "baseX": 0.0,
+                "baseY": 0.0,
+                "baseZ": 0.0,
+                "handle": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "handleX": 0.0,
+                "handleY": 0.0,
+                "handleZ": 0.0,
+                "bone_a_length": 0.0,
+                "bone_b_length": 0.0,
+                "angle_a": 0.0,
+                "angle_b": 0.0
+            }
+        },
+        {
+            "type": "orodruin-library::QuaternionMultiply",
+            "name": "QuaternionMultiply",
+            "ports": {
+                "input1": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "input1X": 0.0,
+                "input1Y": 0.0,
+                "input1Z": 0.0,
+                "input1W": 0.0,
+                "input2": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "input2X": 0.0,
+                "input2Y": 0.0,
+                "input2Z": 0.0,
+                "input2W": 0.0,
+                "output": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "outputX": 0.0,
+                "outputY": 0.0,
+                "outputZ": 0.0,
+                "outputW": 0.0
+            }
+        }
+    ],
+    "ports": [],
+    "connections": [
+        [
+            "Locator2.world_matrix",
+            "MatrixDecompose8.input"
+        ],
+        [
+            "MatrixDecompose8.translate",
+            "VectorSubstract2.input1"
+        ],
+        [
+            "Aim.output",
+            "MatrixDecompose4.input"
+        ],
+        [
+            "MatrixDecompose4.translate",
+            "MatrixCompose.translate"
+        ],
+        [
+            "MatrixDecompose4.quaternion",
+            "QuaternionMultiply.input2"
+        ],
+        [
+            "Locator2.world_matrix",
+            "TwoBoneRestSolver.guide_c"
+        ],
+        [
+            "Locator2.world_matrix",
+            "ik_end_CON.rest_matrix"
+        ],
+        [
+            "MatrixDecompose7.translate",
+            "VectorSubstract3.input1"
+        ],
+        [
+            "MatrixDecompose6.translate",
+            "VectorSubstract3.input2"
+        ],
+        [
+            "VectorSubstract3.output",
+            "VectorLength.input"
+        ],
+        [
+            "MatrixDecompose1.translate",
+            "VectorSubstract.input1"
+        ],
+        [
+            "MatrixDecompose.translate",
+            "VectorSubstract.input2"
+        ],
+        [
+            "VectorSubstract.output",
+            "VectorCross.input2"
+        ],
+        [
+            "TwoBoneIK2D.angle_b",
+            "QuaternionFromAxisAngle1.angle"
+        ],
+        [
+            "QuaternionFromAxisAngle1.output",
+            "MatrixCompose1.quaternion"
+        ],
+        [
+            "MatrixDecompose5.translate",
+            "MatrixCompose1.translate"
+        ],
+        [
+            "MatrixCompose1.output",
+            "Joint1.rest_matrix"
+        ],
+        [
+            "Locator.world_matrix",
+            "TwoBoneRestSolver.guide_a"
+        ],
+        [
+            "Locator.world_matrix",
+            "ik_base_CON.rest_matrix"
+        ],
+        [
+            "Locator.world_matrix",
+            "MatrixDecompose6.input"
+        ],
+        [
+            "ik_base_CON.world_matrix",
+            "MatrixDecompose.input"
+        ],
+        [
+            "MatrixDecompose.translate",
+            "VectorSubstract1.input2"
+        ],
+        [
+            "MatrixDecompose.translate",
+            "TwoBoneIK2D.base"
+        ],
+        [
+            "Locator1.world_matrix",
+            "ik_pv_CON.rest_matrix"
+        ],
+        [
+            "ik_pv_CON.world_matrix",
+            "MatrixDecompose1.input"
+        ],
+        [
+            "VectorLength.output",
+            "TwoBoneIK2D.bone_a_length"
+        ],
+        [
+            "TwoBoneRestSolver.rest_matrix_c",
+            "Joint2.rest_matrix"
+        ],
+        [
+            "VectorSubstract1.output",
+            "VectorCross.input1"
+        ],
+        [
+            "VectorCross.output",
+            "Aim.up_vector"
+        ],
+        [
+            "ik_end_CON.world_matrix",
+            "MatrixDecompose2.input"
+        ],
+        [
+            "TwoBoneIK2D.angle_a",
+            "QuaternionFromAxisAngle.angle"
+        ],
+        [
+            "QuaternionFromAxisAngle.output",
+            "QuaternionMultiply.input1"
+        ],
+        [
+            "TwoBoneRestSolver.rest_matrix_b",
+            "MatrixDecompose5.input"
+        ],
+        [
+            "VectorSubstract2.output",
+            "VectorLength1.input"
+        ],
+        [
+            "VectorLength1.output",
+            "TwoBoneIK2D.bone_b_length"
+        ],
+        [
+            "MatrixDecompose2.translate",
+            "VectorSubstract1.input1"
+        ],
+        [
+            "VectorSubstract1.output",
+            "Aim.aim_vector"
+        ],
+        [
+            "QuaternionMultiply.output",
+            "MatrixCompose.quaternion"
+        ],
+        [
+            "MatrixCompose.output",
+            "Joint.rest_matrix"
+        ],
+        [
+            "Locator1.world_matrix",
+            "MatrixDecompose7.input"
+        ],
+        [
+            "MatrixDecompose7.translate",
+            "VectorSubstract2.input2"
+        ],
+        [
+            "MatrixDecompose2.translate",
+            "TwoBoneIK2D.handle"
+        ],
+        [
+            "Locator1.world_matrix",
+            "TwoBoneRestSolver.guide_b"
+        ],
+        [
+            "ik_base_CON.world_matrix",
+            "Aim.base_matrix"
+        ]
+    ]
+}
