@@ -1,11 +1,13 @@
 from dataclasses import dataclass
 from typing import Dict
-from maya import cmds
+
 from orodruin_maya import OMNode
 
-@dataclass
-class Guide(OMNode):
+from maya import cmds
 
+
+@dataclass
+class Locator(OMNode):
     def build(self):
         self._input_node = cmds.spaceLocator(
             name=self._name,
@@ -34,4 +36,3 @@ class Guide(OMNode):
             "world_matrix": "worldMatrix",
             "matrix": "matrix",
         }
-
