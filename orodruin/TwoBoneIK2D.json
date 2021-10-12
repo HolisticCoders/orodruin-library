@@ -3,76 +3,22 @@
     "nodes": [],
     "ports": [
         {
-            "name": "angle_a",
-            "direction": "output",
-            "type": "float"
-        },
-        {
-            "name": "angle_b",
-            "direction": "output",
-            "type": "float"
-        },
-        {
-            "name": "point_a",
+            "name": "base",
             "direction": "input",
             "type": "Vector3",
             "children": [
                 {
-                    "name": "point_aX",
+                    "name": "baseX",
                     "direction": "input",
                     "type": "float"
                 },
                 {
-                    "name": "point_aY",
+                    "name": "baseY",
                     "direction": "input",
                     "type": "float"
                 },
                 {
-                    "name": "point_aZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "point_b",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "point_bX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "point_bY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "point_bZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "point_c",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "point_cX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "point_cY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "point_cZ",
+                    "name": "baseZ",
                     "direction": "input",
                     "type": "float"
                 }
@@ -99,6 +45,26 @@
                     "type": "float"
                 }
             ]
+        },
+        {
+            "name": "bone_a_length",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "bone_b_length",
+            "direction": "input",
+            "type": "float"
+        },
+        {
+            "name": "angle_a",
+            "direction": "output",
+            "type": "float"
+        },
+        {
+            "name": "angle_b",
+            "direction": "output",
+            "type": "float"
         }
     ],
     "connections": []

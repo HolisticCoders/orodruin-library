@@ -1,0 +1,34 @@
+{
+    "definitions": {},
+    "nodes": [],
+    "ports": [
+        {
+            "name": "input",
+            "direction": "input",
+            "type": "Vector3",
+            "children": [
+                {
+                    "name": "inputX",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "inputY",
+                    "direction": "input",
+                    "type": "float"
+                },
+                {
+                    "name": "inputZ",
+                    "direction": "input",
+                    "type": "float"
+                }
+            ]
+        },
+        {
+            "name": "output",
+            "direction": "output",
+            "type": "float"
+        }
+    ],
+    "connections": []
+}
