@@ -3,9 +3,9 @@ from typing import Dict
 from maya import cmds
 from orodruin_maya import OMNode
 
+
 @dataclass
 class VectorDot(OMNode):
-
     def build(self):
         self._input_node = cmds.createNode(
             "vectorProduct",
@@ -30,4 +30,3 @@ class VectorDot(OMNode):
             "output": "output",
             "normalize": "normalizeOutput",
         }
-

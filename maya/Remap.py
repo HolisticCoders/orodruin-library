@@ -3,9 +3,9 @@ from typing import Dict
 from maya import cmds
 from orodruin_maya import OMNode
 
+
 @dataclass
 class Remap(OMNode):
-
     def build(self):
         self._input_node = cmds.createNode(
             "setRange",
@@ -23,5 +23,5 @@ class Remap(OMNode):
             "old_max": "oldMaxX",
             "new_min": "minX",
             "new_max": "maxX",
-            "output": "outValueX"
+            "output": "outValueX",
         }

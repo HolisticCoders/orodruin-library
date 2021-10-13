@@ -3,9 +3,9 @@ from typing import Dict
 from maya import cmds
 from orodruin_maya import OMNode
 
+
 @dataclass
 class Control(OMNode):
-
     def build(self):
         self._input_node = cmds.circle(
             constructionHistory=False,
@@ -35,4 +35,3 @@ class Control(OMNode):
             "world_matrix": "worldMatrix",
             "matrix": "matrix",
         }
-

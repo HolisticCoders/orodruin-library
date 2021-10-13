@@ -3,9 +3,9 @@ from typing import Dict
 from maya import cmds
 from orodruin_maya import OMNode
 
+
 @dataclass
 class MatrixDecompose(OMNode):
-
     def build(self):
         self._input_node = cmds.createNode(
             "decomposeMatrix",

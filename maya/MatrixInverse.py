@@ -3,9 +3,9 @@ from typing import Dict
 from maya import cmds
 from orodruin_maya import OMNode
 
+
 @dataclass
 class MatrixInverse(OMNode):
-
     def build(self):
         self._input_node = cmds.createNode(
             "inverseMatrix",
@@ -17,7 +17,4 @@ class MatrixInverse(OMNode):
     @staticmethod
     def maya_attribute_map() -> Dict[str, str]:
         """Return a dictionary mapping the ports names and their maya attributes."""
-        return {
-            "input": "inputMatrix",
-            "output": "outputMatrix"
-        }
+        return {"input": "inputMatrix", "output": "outputMatrix"}

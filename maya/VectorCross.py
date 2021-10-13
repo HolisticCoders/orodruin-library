@@ -3,9 +3,9 @@ from typing import Dict
 from maya import cmds
 from orodruin_maya import OMNode
 
+
 @dataclass
 class VectorCross(OMNode):
-
     def build(self):
         self._input_node = cmds.createNode(
             "vectorProduct",
@@ -33,4 +33,3 @@ class VectorCross(OMNode):
             "outputZ": "outputZ",
             "normalize": "normalizeOutput",
         }
-
