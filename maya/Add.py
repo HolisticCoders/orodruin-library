@@ -1,10 +1,12 @@
-from dataclasses import dataclass
 from typing import Dict
-from maya import cmds
+
+import attr
 from orodruin_maya import OMNode
 
+from maya import cmds
 
-@dataclass
+
+@attr.s
 class Add(OMNode):
     def build(self):
         self._input_node = cmds.createNode(

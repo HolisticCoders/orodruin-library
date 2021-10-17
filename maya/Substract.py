@@ -1,10 +1,10 @@
-from dataclasses import dataclass
+import attr
 from typing import Dict
 from maya import cmds
 from orodruin_maya import OMNode
 
 
-@dataclass
+@attr.s
 class Substract(OMNode):
     def build(self):
         self._input_node = cmds.createNode(

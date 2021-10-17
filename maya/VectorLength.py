@@ -1,4 +1,4 @@
-from dataclasses import dataclass, field
+import attr, field
 
 from orodruin_maya import OMGroupNode
 
@@ -10,7 +10,7 @@ vector $input = <<{0}.inputX, {0}.inputY, {0}.inputZ>>;
 """
 
 
-@dataclass
+@attr.s
 class VectorLength(OMGroupNode):
     _expression_template: str = field(init=False)
     _expression_node: str = field(init=False)

@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+import attr
 from typing import Dict
 
 from orodruin_maya import OMNode
@@ -6,7 +6,7 @@ from orodruin_maya import OMNode
 from maya import cmds
 
 
-@dataclass
+@attr.s
 class VectorAdd(OMNode):
     def build(self):
         self._input_node = cmds.createNode(

@@ -1,4 +1,4 @@
-from dataclasses import dataclass, field
+import attr, field
 
 from orodruin_maya import OMGroupNode
 
@@ -35,7 +35,7 @@ float $angle_b = acos($cos_angle_b);
 """
 
 
-@dataclass
+@attr.s
 class TwoBoneIK2D(OMGroupNode):
     _expression_template: str = field(init=False)
     _expression_node: str = field(init=False)

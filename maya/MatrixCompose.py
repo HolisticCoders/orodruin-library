@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+import attr
 from typing import Dict
 
 from orodruin_maya import OMNode
@@ -6,13 +6,14 @@ from orodruin_maya import OMNode
 from maya import cmds
 
 
-@dataclass
+@attr.s
 class MatrixCompose(OMNode):
     def build(self):
         self._input_node = cmds.createNode(
             "composeMatrix",
             name=self._name,
         )
+        cmds.setAttr(f"{self._input_node}.useEulerRotation", False)
 
         self._output_node = self._input_node
 
