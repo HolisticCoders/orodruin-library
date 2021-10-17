@@ -1,18 +1,22 @@
-from dataclasses import dataclass
 from typing import Dict
+
+import attr
+from orodruin_maya import OMNode, create_node
+
 from maya import cmds
-from orodruin_maya import OMNode
 
-@dataclass
+
+@attr.s
 class Transform(OMNode):
-
     def build(self):
-        self._input_node = cmds.createNode(
+        self._input_node = create_node(
             "transform",
             name=self._name,
         )
 
         self._output_node = self._input_node
+
+        self._nodes.append(self._input_node)
 
     @staticmethod
     def maya_attribute_map() -> Dict[str, str]:
@@ -35,4 +39,3 @@ class Transform(OMNode):
             "world_matrix": "worldMatrix",
             "matrix": "matrix",
         }
-

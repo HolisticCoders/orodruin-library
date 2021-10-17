@@ -1,19 +1,23 @@
-from dataclasses import dataclass
 from typing import Dict
 
-from orodruin_maya import OMNode
+import attr
+from orodruin_maya import OMNode, get_mobject
 
 from maya import cmds
 
 
-@dataclass
+@attr.s
 class Locator(OMNode):
     def build(self):
-        self._input_node = cmds.spaceLocator(
-            name=self._name,
-        )[0]
+        self._input_node = get_mobject(
+            cmds.spaceLocator(
+                name=self._name,
+            )[0]
+        )
 
         self._output_node = self._input_node
+
+        self._nodes.append(self._input_node)
 
     @staticmethod
     def maya_attribute_map() -> Dict[str, str]:
