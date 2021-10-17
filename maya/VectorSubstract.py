@@ -1,7 +1,7 @@
-import attr
 from typing import Dict
 
-from orodruin_maya import OMNode
+import attr
+from orodruin_maya import OMNode, create_node
 
 from maya import cmds
 
@@ -9,13 +9,14 @@ from maya import cmds
 @attr.s
 class VectorSubstract(OMNode):
     def build(self):
-        self._input_node = cmds.createNode(
+        self._input_node = create_node(
             "plusMinusAverage",
             name=self._name,
         )
-        cmds.setAttr(f"{self._input_node}.operation", 2)
+        cmds.setAttr(f"{self._input_node.name()}.operation", 2)
 
         self._output_node = self._input_node
+        self._nodes.append(self._input_node)
 
     @staticmethod
     def maya_attribute_map() -> Dict[str, str]:

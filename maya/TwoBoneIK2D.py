@@ -1,6 +1,5 @@
-import attr, field
-
-from orodruin_maya import OMGroupNode
+import attr
+from orodruin_maya import OMGroupNode, get_mobject
 
 from maya import cmds
 
@@ -37,8 +36,8 @@ float $angle_b = acos($cos_angle_b);
 
 @attr.s
 class TwoBoneIK2D(OMGroupNode):
-    _expression_template: str = field(init=False)
-    _expression_node: str = field(init=False)
+    _expression_template: str = attr.ib(init=False)
+    _expression_node: str = attr.ib(init=False)
 
     def build(self) -> None:
         super().build()
@@ -48,56 +47,69 @@ class TwoBoneIK2D(OMGroupNode):
         self._create_maya_attributes()
 
         self._expression_template = EXPRESSION_TEMPLATE.format(
-            self._input_node, self._output_node
+            self._input_node.name(), self._output_node.name()
         )
-        self._expression_node = cmds.expression(
-            string=self._expression_template,
-            name=self.__class__.__name__ + "_EXP",
+        self._expression_node = get_mobject(
+            cmds.expression(
+                string=self._expression_template,
+                name=self.__class__.__name__ + "_EXP",
+            )
         )
+        self._nodes.append(self._expression_node)
 
     def _create_maya_attributes(self) -> None:
-        cmds.addAttr(self._input_node, longName="base", attributeType="double3")
+        cmds.addAttr(self._input_node.name(), longName="base", attributeType="double3")
         cmds.addAttr(
-            self._input_node,
+            self._input_node.name(),
             longName="baseX",
             attributeType="double",
             parent="base",
         )
         cmds.addAttr(
-            self._input_node,
+            self._input_node.name(),
             longName="baseY",
             attributeType="double",
             parent="base",
         )
         cmds.addAttr(
-            self._input_node,
+            self._input_node.name(),
             longName="baseZ",
             attributeType="double",
             parent="base",
         )
 
-        cmds.addAttr(self._input_node, longName="handle", attributeType="double3")
         cmds.addAttr(
-            self._input_node,
+            self._input_node.name(), longName="handle", attributeType="double3"
+        )
+        cmds.addAttr(
+            self._input_node.name(),
             longName="handleX",
             attributeType="double",
             parent="handle",
         )
         cmds.addAttr(
-            self._input_node,
+            self._input_node.name(),
             longName="handleY",
             attributeType="double",
             parent="handle",
         )
         cmds.addAttr(
-            self._input_node,
+            self._input_node.name(),
             longName="handleZ",
             attributeType="double",
             parent="handle",
         )
 
-        cmds.addAttr(self._input_node, longName="bone_a_length", attributeType="double")
-        cmds.addAttr(self._input_node, longName="bone_b_length", attributeType="double")
+        cmds.addAttr(
+            self._input_node.name(), longName="bone_a_length", attributeType="double"
+        )
+        cmds.addAttr(
+            self._input_node.name(), longName="bone_b_length", attributeType="double"
+        )
 
-        cmds.addAttr(self._output_node, longName="angle_a", attributeType="double")
-        cmds.addAttr(self._output_node, longName="angle_b", attributeType="double")
+        cmds.addAttr(
+            self._output_node.name(), longName="angle_a", attributeType="double"
+        )
+        cmds.addAttr(
+            self._output_node.name(), longName="angle_b", attributeType="double"
+        )
