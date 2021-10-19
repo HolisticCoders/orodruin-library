@@ -1,0 +1,28 @@
+{
+  "name": "Divide",
+  "type": "Divide",
+  "library": "orodruin-library",
+  "ports": [
+    {
+      "name": "input1",
+      "direction": "input",
+      "type": "float",
+      "value": 0.0
+    },
+    {
+      "name": "input2",
+      "direction": "input",
+      "type": "float",
+      "value": 0.0
+    },
+    {
+      "name": "output",
+      "direction": "output",
+      "type": "float",
+      "value": 0.0
+    } ],
+  "graph": {
+    "nodes": [],
+    "connections": []
+  }
+}

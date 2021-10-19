@@ -1,0 +1,72 @@
+{
+  "name": "QuaternionFromAxisAngle",
+  "type": "QuaternionFromAxisAngle",
+  "library": "orodruin-library",
+  "ports": [
+    {
+      "name": "axis",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
+        {
+          "name": "axisX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "axisY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "axisZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "angle",
+      "direction": "input",
+      "type": "float",
+      "value": 0.0
+    },
+    {
+      "name": "output",
+      "direction": "output",
+      "type": "Quaternion",
+      "value": [ 0.0, 0.0, 0.0, 1.0 ],
+      "children": [
+        {
+          "name": "outputX",
+          "direction": "output",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "outputY",
+          "direction": "output",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "outputZ",
+          "direction": "output",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "outputW",
+          "direction": "output",
+          "type": "float",
+          "value": 0.0
+        } ]
+    } ],
+  "graph": {
+    "nodes": [],
+    "connections": []
+  }
+}

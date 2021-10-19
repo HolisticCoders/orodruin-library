@@ -1,0 +1,109 @@
+{
+  "name": "Joint",
+  "type": "Joint",
+  "library": "orodruin-library",
+  "ports": [
+    {
+      "name": "translate",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
+        {
+          "name": "translateX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "translateY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "translateZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "rotate",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
+        {
+          "name": "rotateX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "rotateY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "rotateZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "scale",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
+        {
+          "name": "scaleX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scaleY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scaleZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "rest_matrix",
+      "direction": "input",
+      "type": "Matrix4",
+      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+    },
+    {
+      "name": "inherits_transform",
+      "direction": "input",
+      "type": "bool",
+      "value": false
+    },
+    {
+      "name": "world_matrix",
+      "direction": "output",
+      "type": "Matrix4",
+      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+    },
+    {
+      "name": "matrix",
+      "direction": "output",
+      "type": "Matrix4",
+      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+    } ],
+  "graph": {
+    "nodes": [],
+    "connections": []
+  }
+}
