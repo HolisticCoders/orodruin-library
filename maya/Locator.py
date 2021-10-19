@@ -1,6 +1,7 @@
 from typing import Dict
 
 import attr
+import cmdx
 from orodruin_maya import OMNode
 
 from maya import cmds
@@ -9,8 +10,9 @@ from maya import cmds
 @attr.s
 class Locator(OMNode):
     def build(self):
-        self._input_node = self.create_node("locator", name=self._name)
+        self._input_node = cmdx.encode(cmds.spaceLocator(name=self._name)[0])
         self._output_node = self._input_node
+        self._nodes.append(self._input_node)
 
     @staticmethod
     def maya_attribute_map() -> Dict[str, str]:
