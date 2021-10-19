@@ -1,5 +1,6 @@
 import attr
-from orodruin_maya import OMGroupNode, get_mobject
+import cmdx
+from orodruin_maya import OMGroupNode
 
 from maya import cmds
 
@@ -24,14 +25,12 @@ class VectorLength(OMGroupNode):
         self._expression_template = EXPRESSION_TEMPLATE.format(
             self._input_node.name(), self._output_node.name()
         )
-        self._expression_node = get_mobject(
+        self._expression_node = cmdx.encode(
             cmds.expression(
                 string=self._expression_template,
                 name=self.__class__.__name__ + "_EXP",
             )
         )
-
-        self._nodes.append(self._expression_node)
 
     def _create_maya_attributes(self) -> None:
         cmds.addAttr(self._input_node.name(), longName="input", attributeType="double3")

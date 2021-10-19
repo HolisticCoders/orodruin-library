@@ -1,7 +1,8 @@
 from typing import Dict
 
 import attr
-from orodruin_maya import OMNode, get_mobject
+import cmdx
+from orodruin_maya import OMNode
 
 from maya import cmds
 
@@ -9,7 +10,7 @@ from maya import cmds
 @attr.s
 class Control(OMNode):
     def build(self):
-        self._input_node = get_mobject(
+        self._input_node = cmdx.encode(
             cmds.circle(
                 constructionHistory=False,
                 name=self._name,

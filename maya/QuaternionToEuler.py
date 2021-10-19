@@ -1,7 +1,7 @@
 from typing import Dict
 
 import attr
-from orodruin_maya import OMNode, create_node
+from orodruin_maya import OMNode
 
 from maya import cmds
 
@@ -9,14 +9,12 @@ from maya import cmds
 @attr.s
 class QuaternionToEuler(OMNode):
     def build(self):
-        self._input_node = create_node(
+        self._input_node = self.create_node(
             "quatToEuler",
             name=self._name,
         )
 
         self._output_node = self._input_node
-
-        self._nodes.append(self._input_node)
 
     @staticmethod
     def maya_attribute_map() -> Dict[str, str]:
