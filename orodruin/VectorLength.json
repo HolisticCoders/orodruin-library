@@ -1,34 +1,41 @@
 {
-    "definitions": {},
-    "nodes": [],
-    "ports": [
+  "name": "VectorLength",
+  "type": "VectorLength",
+  "library": "orodruin-library",
+  "ports": [
+    {
+      "name": "input",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
         {
-            "name": "input",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "inputX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "inputY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "inputZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
+          "name": "inputX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
         },
         {
-            "name": "output",
-            "direction": "output",
-            "type": "float"
-        }
-    ],
+          "name": "inputY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "inputZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "output",
+      "direction": "output",
+      "type": "float",
+      "value": 0.0
+    } ],
+  "graph": {
+    "nodes": [],
     "connections": []
+  }
 }

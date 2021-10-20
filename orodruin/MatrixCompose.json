@@ -1,127 +1,147 @@
 {
-    "definitions": {},
+  "name": "MatrixCompose",
+  "type": "MatrixCompose",
+  "library": "orodruin-library",
+  "ports": [
+    {
+      "name": "translate",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
+        {
+          "name": "translateX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "translateY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "translateZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "euler",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
+        {
+          "name": "eulerX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "eulerY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "eulerZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "quaternion",
+      "direction": "input",
+      "type": "Quaternion",
+      "value": [ 0.0, 0.0, 0.0, 1.0 ],
+      "children": [
+        {
+          "name": "quaternionX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "quaternionY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "quaternionZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "quaternionW",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "scale",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
+        {
+          "name": "scaleX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scaleY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scaleZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "shear",
+      "direction": "input",
+      "type": "Vector3",
+      "value": [ 0.0, 0.0, 0.0 ],
+      "children": [
+        {
+          "name": "shearX",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "shearY",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "shearZ",
+          "direction": "input",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "output",
+      "direction": "output",
+      "type": "Matrix4",
+      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+    } ],
+  "graph": {
     "nodes": [],
-    "ports": [
-        {
-            "name": "translate",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "translateX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "translateY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "translateZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "euler",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "eulerX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "eulerY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "eulerZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "quaternion",
-            "direction": "input",
-            "type": "Quaternion",
-            "children": [
-                {
-                    "name": "quaternionX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "quaternionY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "quaternionZ",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "quaternionW",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "scale",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "scaleX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "scaleY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "scaleZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "shear",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "shearX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "shearY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "shearZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "output",
-            "direction": "output",
-            "type": "Matrix4"
-        }
-    ],
     "connections": []
+  }
 }

@@ -1,268 +1,350 @@
 {
-    "definitions": {},
+  "name": "TwistExctractor",
+  "type": "TwistExctractor",
+  "library": "orodruin-library",
+  "ports": [
+    {
+      "name": "output",
+      "direction": "output",
+      "type": "Quaternion",
+      "value": [ 0.0, 0.0, 0.0, 1.0 ],
+      "children": [
+        {
+          "name": "outputX",
+          "direction": "output",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "outputY",
+          "direction": "output",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "outputZ",
+          "direction": "output",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "outputW",
+          "direction": "output",
+          "type": "float",
+          "value": 0.0
+        } ]
+    },
+    {
+      "name": "rest_matrix",
+      "direction": "input",
+      "type": "Matrix4",
+      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+    },
+    {
+      "name": "matrix",
+      "direction": "input",
+      "type": "Matrix4",
+      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+    } ],
+  "graph": {
     "nodes": [
-        {
-            "type": "orodruin-library::MatrixInverse",
-            "name": "MatrixInverse",
-            "ports": {
-                "input": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "output": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ]
-            }
-        },
-        {
-            "type": "orodruin-library::QuaternionNormalize",
-            "name": "QuaternionNormalize",
-            "ports": {
-                "input": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "inputX": 0.0,
-                "inputY": 0.0,
-                "inputZ": 0.0,
-                "inputW": 0.0,
-                "output": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "outputX": 0.0,
-                "outputY": 0.0,
-                "outputZ": 0.0,
-                "outputW": 0.0
-            }
-        },
-        {
-            "type": "orodruin-library::MatrixMultiply",
-            "name": "MatrixMultiply",
-            "ports": {
-                "input1": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "input2": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "output": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ]
-            }
-        },
-        {
-            "type": "orodruin-library::MatrixDecompose",
-            "name": "MatrixDecompose",
-            "ports": {
-                "input": [
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "translate": [
-                    0.0,
-                    0.0,
-                    0.0
-                ],
-                "translateX": 0.0,
-                "translateY": 0.0,
-                "translateZ": 0.0,
-                "euler": [
-                    0.0,
-                    0.0,
-                    0.0
-                ],
-                "eulerX": 0.0,
-                "eulerY": 0.0,
-                "eulerZ": 0.0,
-                "quaternion": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
-                ],
-                "quaternionX": 0.0,
-                "quaternionY": 0.0,
-                "quaternionZ": 0.0,
-                "quaternionW": 0.0,
-                "scale": [
-                    0.0,
-                    0.0,
-                    0.0
-                ],
-                "scaleX": 0.0,
-                "scaleY": 0.0,
-                "scaleZ": 0.0,
-                "shear": [
-                    0.0,
-                    0.0,
-                    0.0
-                ],
-                "shearX": 0.0,
-                "shearY": 0.0,
-                "shearZ": 0.0
-            }
+      {
+        "name": "MatrixInverse",
+        "type": "MatrixInverse",
+        "library": "orodruin-library",
+        "ports": [
+          {
+            "name": "input",
+            "direction": "input",
+            "type": "Matrix4",
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+          },
+          {
+            "name": "output",
+            "direction": "output",
+            "type": "Matrix4",
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+          } ],
+        "graph": {
+          "nodes": [],
+          "connections": []
         }
-    ],
-    "ports": [
-        {
+      },
+      {
+        "name": "QuaternionNormalize",
+        "type": "QuaternionNormalize",
+        "library": "orodruin-library",
+        "ports": [
+          {
+            "name": "input",
+            "direction": "input",
+            "type": "Quaternion",
+            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "children": [
+              {
+                "name": "inputX",
+                "direction": "input",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "inputY",
+                "direction": "input",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "inputZ",
+                "direction": "input",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "inputW",
+                "direction": "input",
+                "type": "float",
+                "value": 0.0
+              } ]
+          },
+          {
             "name": "output",
             "direction": "output",
             "type": "Quaternion",
+            "value": [ 0.0, 0.0, 0.0, 1.0 ],
             "children": [
-                {
-                    "name": "outputX",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputY",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputZ",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputW",
-                    "direction": "output",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "rest_matrix",
-            "direction": "input",
-            "type": "Matrix4"
-        },
-        {
-            "name": "matrix",
-            "direction": "input",
-            "type": "Matrix4"
+              {
+                "name": "outputX",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "outputY",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "outputZ",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "outputW",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              } ]
+          } ],
+        "graph": {
+          "nodes": [],
+          "connections": []
         }
-    ],
+      },
+      {
+        "name": "MatrixMultiply",
+        "type": "MatrixMultiply",
+        "library": "orodruin-library",
+        "ports": [
+          {
+            "name": "input1",
+            "direction": "input",
+            "type": "Matrix4",
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+          },
+          {
+            "name": "input2",
+            "direction": "input",
+            "type": "Matrix4",
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+          },
+          {
+            "name": "output",
+            "direction": "output",
+            "type": "Matrix4",
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+          } ],
+        "graph": {
+          "nodes": [],
+          "connections": []
+        }
+      },
+      {
+        "name": "MatrixDecompose",
+        "type": "MatrixDecompose",
+        "library": "orodruin-library",
+        "ports": [
+          {
+            "name": "input",
+            "direction": "input",
+            "type": "Matrix4",
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+          },
+          {
+            "name": "translate",
+            "direction": "output",
+            "type": "Vector3",
+            "value": [ 0.0, 0.0, 0.0 ],
+            "children": [
+              {
+                "name": "translateX",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "translateY",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "translateZ",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              } ]
+          },
+          {
+            "name": "euler",
+            "direction": "output",
+            "type": "Vector3",
+            "value": [ 0.0, 0.0, 0.0 ],
+            "children": [
+              {
+                "name": "eulerX",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "eulerY",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "eulerZ",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              } ]
+          },
+          {
+            "name": "quaternion",
+            "direction": "output",
+            "type": "Quaternion",
+            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "children": [
+              {
+                "name": "quaternionX",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "quaternionY",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "quaternionZ",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "quaternionW",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              } ]
+          },
+          {
+            "name": "scale",
+            "direction": "output",
+            "type": "Vector3",
+            "value": [ 0.0, 0.0, 0.0 ],
+            "children": [
+              {
+                "name": "scaleX",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "scaleY",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "scaleZ",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              } ]
+          },
+          {
+            "name": "shear",
+            "direction": "output",
+            "type": "Vector3",
+            "value": [ 0.0, 0.0, 0.0 ],
+            "children": [
+              {
+                "name": "shearX",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "shearY",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              },
+              {
+                "name": "shearZ",
+                "direction": "output",
+                "type": "float",
+                "value": 0.0
+              } ]
+          } ],
+        "graph": {
+          "nodes": [],
+          "connections": []
+        }
+      } ],
     "connections": [
-        [
-            "MatrixInverse.output",
-            "MatrixMultiply.input1"
-        ],
-        [
-            "MatrixDecompose.quaternionX",
-            "QuaternionNormalize.inputX"
-        ],
-        [
-            "MatrixDecompose.quaternionW",
-            "QuaternionNormalize.inputW"
-        ],
-        [
-            "QuaternionNormalize.output",
-            ".output"
-        ],
-        [
-            "MatrixMultiply.output",
-            "MatrixDecompose.input"
-        ],
-        [
-            ".rest_matrix",
-            "MatrixInverse.input"
-        ],
-        [
-            ".matrix",
-            "MatrixMultiply.input2"
-        ]
-    ]
+      {
+        "source": "MatrixInverse.output",
+        "target": "MatrixMultiply.input1"
+      },
+      {
+        "source": "MatrixDecompose.quaternionX",
+        "target": "QuaternionNormalize.inputX"
+      },
+      {
+        "source": "MatrixDecompose.quaternionW",
+        "target": "QuaternionNormalize.inputW"
+      },
+      {
+        "source": "QuaternionNormalize.output",
+        "target": ".output"
+      },
+      {
+        "source": "MatrixMultiply.output",
+        "target": "MatrixDecompose.input"
+      },
+      {
+        "source": ".rest_matrix",
+        "target": "MatrixInverse.input"
+      },
+      {
+        "source": ".matrix",
+        "target": "MatrixMultiply.input2"
+      } ]
+  }
 }

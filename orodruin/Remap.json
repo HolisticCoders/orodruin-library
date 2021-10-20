@@ -1,37 +1,46 @@
 {
-    "definitions": {},
+  "name": "Remap",
+  "type": "Remap",
+  "library": "orodruin-library",
+  "ports": [
+    {
+      "name": "input",
+      "direction": "input",
+      "type": "float",
+      "value": 0.0
+    },
+    {
+      "name": "old_min",
+      "direction": "input",
+      "type": "float",
+      "value": 0.0
+    },
+    {
+      "name": "old_max",
+      "direction": "input",
+      "type": "float",
+      "value": 0.0
+    },
+    {
+      "name": "new_min",
+      "direction": "input",
+      "type": "float",
+      "value": 0.0
+    },
+    {
+      "name": "new_max",
+      "direction": "input",
+      "type": "float",
+      "value": 0.0
+    },
+    {
+      "name": "output",
+      "direction": "output",
+      "type": "float",
+      "value": 0.0
+    } ],
+  "graph": {
     "nodes": [],
-    "ports": [
-        {
-            "name": "input",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "old_min",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "old_max",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "new_min",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "new_max",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "output",
-            "direction": "output",
-            "type": "float"
-        }
-    ],
     "connections": []
+  }
 }
