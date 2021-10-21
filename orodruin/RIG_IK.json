@@ -2,9 +2,6 @@
   "name": "RIG_IK",
   "type": "RIG_IK",
   "library": "orodruin-library",
-  "editor": {
-    "position": [ -6.625, 2.125 ]
-  },
   "ports": [],
   "graph": {
     "nodes": [
@@ -20,19 +17,19 @@
             "name": "input",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "translate",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "translateX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "translateY",
@@ -51,7 +48,7 @@
             "name": "euler",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -63,7 +60,7 @@
                 "name": "eulerY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -100,32 +97,32 @@
                 "name": "quaternionW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "scale",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -201,7 +198,7 @@
             "name": "euler",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -213,7 +210,7 @@
                 "name": "eulerY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -250,32 +247,32 @@
                 "name": "quaternionW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "scale",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -320,13 +317,13 @@
             "name": "translate",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "translateX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "translateY",
@@ -370,25 +367,25 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -401,19 +398,19 @@
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -432,13 +429,13 @@
             "name": "input1",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "input1X",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "input1Y",
@@ -450,7 +447,7 @@
                 "name": "input1Z",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -482,13 +479,13 @@
             "name": "output",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "outputX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "outputY",
@@ -500,7 +497,7 @@
                 "name": "outputZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           } ],
         "graph": {
@@ -520,13 +517,13 @@
             "name": "input1",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "input1X",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "input1Y",
@@ -538,7 +535,7 @@
                 "name": "input1Z",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -570,13 +567,13 @@
             "name": "output",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "outputX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "outputY",
@@ -588,7 +585,7 @@
                 "name": "outputZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           } ],
         "graph": {
@@ -608,7 +605,7 @@
             "name": "axis",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, 1.0, 0.0 ],
             "children": [
               {
                 "name": "axisX",
@@ -620,7 +617,7 @@
                 "name": "axisY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "axisZ",
@@ -633,37 +630,37 @@
             "name": "angle",
             "direction": "input",
             "type": "float",
-            "value": 0.0
+            "value": -1.5707963405542282
           },
           {
             "name": "output",
             "direction": "output",
             "type": "Quaternion",
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ -0.0, -0.7071067860512059, -0.0, 0.7071067763218892 ],
             "children": [
               {
                 "name": "outputX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "outputY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.7071067860512059
               },
               {
                 "name": "outputZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "outputW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 0.7071067763218892
               } ]
           } ],
         "graph": {
@@ -683,13 +680,13 @@
             "name": "translate",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 14.142135623730951, 0.0, 8.881784197001252e-16 ],
             "children": [
               {
                 "name": "translateX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 14.142135623730951
               },
               {
                 "name": "translateY",
@@ -701,7 +698,7 @@
                 "name": "translateZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 8.881784197001252e-16
               } ]
           },
           {
@@ -733,56 +730,56 @@
             "name": "quaternion",
             "direction": "input",
             "type": "Quaternion",
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ -0.0, -0.7071067860512059, -0.0, 0.7071067763218892 ],
             "children": [
               {
                 "name": "quaternionX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "quaternionY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -0.7071067860512059
               },
               {
                 "name": "quaternionZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "quaternionW",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 0.7071067763218892
               } ]
           },
           {
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -814,7 +811,7 @@
             "name": "output",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.3759331785045958e-08, 0.0, 0.9999999999999999, 0.0, -0.0, 1.0, 0.0, 0.0, -0.9999999999999999, -0.0, 1.3759331785045958e-08, 0.0, 14.142135623730951, 0.0, 8.881784197001252e-16, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -883,25 +880,25 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -914,7 +911,7 @@
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
@@ -976,7 +973,7 @@
             "name": "euler",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -988,7 +985,7 @@
                 "name": "eulerY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -1025,32 +1022,32 @@
                 "name": "quaternionW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "scale",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -1145,44 +1142,44 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "rest_matrix",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "matrix",
@@ -1207,13 +1204,13 @@
             "name": "input",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "inputX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "inputY",
@@ -1225,14 +1222,14 @@
                 "name": "inputZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
             "name": "output",
             "direction": "output",
             "type": "float",
-            "value": 0.0
+            "value": 14.142135623730951
           } ],
         "graph": {
           "nodes": [],
@@ -1301,44 +1298,44 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "rest_matrix",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865477, 0.0, 0.7071067811865476, 0.0, 14.142135623730951, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.9999999999999998, 0.0, -2.0433894243332418e-08, 0.0, 0.0, 1.0, 0.0, 0.0, 2.0433894243332418e-08, 0.0, 0.9999999999999998, 0.0, 20.000000137593318, 0.0, -2.710845681264118e-07, 1.0 ]
           },
           {
             "name": "matrix",
@@ -1363,13 +1360,13 @@
             "name": "input1",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "input1X",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "input1Y",
@@ -1388,13 +1385,13 @@
             "name": "input2",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "input2X",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "input2Y",
@@ -1406,7 +1403,7 @@
                 "name": "input2Z",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -1419,19 +1416,19 @@
             "name": "output",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ -0.0, 200.0, 0.0 ],
             "children": [
               {
                 "name": "outputX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "outputY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 200.0
               },
               {
                 "name": "outputZ",
@@ -1507,44 +1504,44 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "rest_matrix",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "matrix",
@@ -1569,7 +1566,7 @@
             "name": "axis",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, 1.0, 0.0 ],
             "children": [
               {
                 "name": "axisX",
@@ -1581,7 +1578,7 @@
                 "name": "axisY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "axisZ",
@@ -1594,13 +1591,13 @@
             "name": "angle",
             "direction": "input",
             "type": "float",
-            "value": 0.0
+            "value": 0.7853981700720106
           },
           {
             "name": "output",
             "direction": "output",
             "type": "Quaternion",
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ 0.0, 0.38268343544833555, 0.0, 0.9238795312341646 ],
             "children": [
               {
                 "name": "outputX",
@@ -1612,7 +1609,7 @@
                 "name": "outputY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 0.38268343544833555
               },
               {
                 "name": "outputZ",
@@ -1624,7 +1621,7 @@
                 "name": "outputW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 0.9238795312341646
               } ]
           } ],
         "graph": {
@@ -1644,19 +1641,19 @@
             "name": "input",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ -2.220446049250313e-16, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, -2.220446049250313e-16, 0.0, 14.142135623730951, 0.0, 8.881784197001252e-16, 1.0 ]
           },
           {
             "name": "translate",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 14.142135623730951, 0.0, 8.881784197001252e-16 ],
             "children": [
               {
                 "name": "translateX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 14.142135623730951
               },
               {
                 "name": "translateY",
@@ -1668,26 +1665,26 @@
                 "name": "translateZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 8.881784197001252e-16
               } ]
           },
           {
             "name": "euler",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ -0.0, -1.5707963267948963, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -1.5707963267948963
               },
               {
                 "name": "eulerZ",
@@ -1700,7 +1697,7 @@
             "name": "quaternion",
             "direction": "output",
             "type": "Quaternion",
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ 0.0, -0.7071067811865475, 0.0, 0.7071067811865477 ],
             "children": [
               {
                 "name": "quaternionX",
@@ -1712,7 +1709,7 @@
                 "name": "quaternionY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.7071067811865475
               },
               {
                 "name": "quaternionZ",
@@ -1724,32 +1721,32 @@
                 "name": "quaternionW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 0.7071067811865477
               } ]
           },
           {
             "name": "scale",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -1794,19 +1791,19 @@
             "name": "input",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "translate",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "translateX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "translateY",
@@ -1818,14 +1815,14 @@
                 "name": "translateZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
             "name": "euler",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -1837,7 +1834,7 @@
                 "name": "eulerY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -1874,32 +1871,32 @@
                 "name": "quaternionW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "scale",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -1944,13 +1941,13 @@
             "name": "input",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, 10.0 ],
             "children": [
               {
                 "name": "inputX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "inputY",
@@ -1962,14 +1959,14 @@
                 "name": "inputZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               } ]
           },
           {
             "name": "output",
             "direction": "output",
             "type": "float",
-            "value": 0.0
+            "value": 14.142135623730951
           } ],
         "graph": {
           "nodes": [],
@@ -1988,13 +1985,13 @@
             "name": "input1",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "input1X",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "input1Y",
@@ -2038,13 +2035,13 @@
             "name": "output",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "outputX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "outputY",
@@ -2126,7 +2123,7 @@
             "name": "quaternion",
             "direction": "input",
             "type": "Quaternion",
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ 0.0, 0.38268343544833555, 0.0, 0.9238795312341646 ],
             "children": [
               {
                 "name": "quaternionX",
@@ -2138,7 +2135,7 @@
                 "name": "quaternionY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 0.38268343544833555
               },
               {
                 "name": "quaternionZ",
@@ -2150,32 +2147,32 @@
                 "name": "quaternionW",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 0.9238795312341646
               } ]
           },
           {
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -2207,7 +2204,7 @@
             "name": "output",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067764669192, 0.0, -0.7071067859061758, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067859061758, 0.0, 0.7071067764669192, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -2226,19 +2223,19 @@
             "name": "input",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "translate",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "translateX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "translateY",
@@ -2250,14 +2247,14 @@
                 "name": "translateZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
             "name": "euler",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -2269,7 +2266,7 @@
                 "name": "eulerY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -2306,32 +2303,32 @@
                 "name": "quaternionW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "scale",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -2376,19 +2373,19 @@
             "name": "input",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "translate",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "translateX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "translateY",
@@ -2407,7 +2404,7 @@
             "name": "euler",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -2419,7 +2416,7 @@
                 "name": "eulerY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -2456,32 +2453,32 @@
                 "name": "quaternionW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "scale",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -2526,13 +2523,13 @@
             "name": "translate",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "translateX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "translateY",
@@ -2544,7 +2541,7 @@
                 "name": "translateZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -2576,25 +2573,25 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -2607,19 +2604,19 @@
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -2650,13 +2647,13 @@
             "name": "aim_axis",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "aim_axisX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "aim_axisY",
@@ -2675,13 +2672,13 @@
             "name": "aim_vector",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "aim_vectorX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "aim_vectorY",
@@ -2700,7 +2697,7 @@
             "name": "up_axis",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, 1.0, 0.0 ],
             "children": [
               {
                 "name": "up_axisX",
@@ -2712,7 +2709,7 @@
                 "name": "up_axisY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "up_axisZ",
@@ -2725,19 +2722,19 @@
             "name": "up_vector",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ -0.0, 200.0, 0.0 ],
             "children": [
               {
                 "name": "up_vectorX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "up_vectorY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 200.0
               },
               {
                 "name": "up_vectorZ",
@@ -2794,7 +2791,7 @@
             "name": "euler",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -2806,7 +2803,7 @@
                 "name": "eulerY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -2843,32 +2840,32 @@
                 "name": "quaternionW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "scale",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -2913,13 +2910,13 @@
             "name": "input1",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "input1X",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "input1Y",
@@ -2938,13 +2935,13 @@
             "name": "input2",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "input2X",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "input2Y",
@@ -2956,20 +2953,20 @@
                 "name": "input2Z",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
             "name": "output",
             "direction": "output",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, 10.0 ],
             "children": [
               {
                 "name": "outputX",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "outputY",
@@ -2981,7 +2978,7 @@
                 "name": "outputZ",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 10.0
               } ]
           } ],
         "graph": {
@@ -3051,44 +3048,44 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "rest_matrix",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.3759331785045958e-08, 0.0, 0.9999999999999999, 0.0, -0.0, 1.0, 0.0, 0.0, -0.9999999999999999, -0.0, 1.3759331785045958e-08, 0.0, 14.142135623730951, 0.0, 8.881784197001252e-16, 1.0 ]
           },
           {
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067956354925, 0.0, 0.7071067667376022, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067667376022, 0.0, 0.7071067956354925, 0.0, 9.999999933254378, 0.0, -10.000000066745624, 1.0 ]
           },
           {
             "name": "matrix",
@@ -3113,19 +3110,19 @@
             "name": "rest_matrix_a",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "rest_matrix_b",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ -2.220446049250313e-16, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, -2.220446049250313e-16, 0.0, 14.142135623730951, 0.0, 8.881784197001252e-16, 1.0 ]
           },
           {
             "name": "rest_matrix_c",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865477, 0.0, 0.7071067811865476, 0.0, 14.142135623730951, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "guide_a",
@@ -3137,13 +3134,13 @@
             "name": "guide_b",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "guide_c",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [
@@ -3159,19 +3156,19 @@
                   "name": "input",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
                 },
                 {
                   "name": "translate",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, -10.0 ],
                   "children": [
                     {
                       "name": "translateX",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "translateY",
@@ -3183,14 +3180,14 @@
                       "name": "translateZ",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": -10.0
                     } ]
                 },
                 {
                   "name": "euler",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 0.0, -0.0, 0.0 ],
                   "children": [
                     {
                       "name": "eulerX",
@@ -3202,7 +3199,7 @@
                       "name": "eulerY",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": -0.0
                     },
                     {
                       "name": "eulerZ",
@@ -3239,32 +3236,32 @@
                       "name": "quaternionW",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     } ]
                 },
                 {
                   "name": "scale",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 1.0, 1.0, 1.0 ],
                   "children": [
                     {
                       "name": "scaleX",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "scaleY",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "scaleZ",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     } ]
                 },
                 {
@@ -3340,7 +3337,7 @@
                   "name": "euler",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 0.0, -0.0, 0.0 ],
                   "children": [
                     {
                       "name": "eulerX",
@@ -3352,7 +3349,7 @@
                       "name": "eulerY",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": -0.0
                     },
                     {
                       "name": "eulerZ",
@@ -3389,32 +3386,32 @@
                       "name": "quaternionW",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     } ]
                 },
                 {
                   "name": "scale",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 1.0, 1.0, 1.0 ],
                   "children": [
                     {
                       "name": "scaleX",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "scaleY",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "scaleZ",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     } ]
                 },
                 {
@@ -3459,25 +3456,25 @@
                   "name": "base_matrix",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
                 },
                 {
                   "name": "output",
                   "direction": "output",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 10.0, 0.0, -10.0, 1.0 ]
                 },
                 {
                   "name": "aim_axis",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 1.0, 0.0, 0.0 ],
                   "children": [
                     {
                       "name": "aim_axisX",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "aim_axisY",
@@ -3496,13 +3493,13 @@
                   "name": "aim_vector",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, 10.0 ],
                   "children": [
                     {
                       "name": "aim_vectorX",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "aim_vectorY",
@@ -3514,14 +3511,14 @@
                       "name": "aim_vectorZ",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     } ]
                 },
                 {
                   "name": "up_axis",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 0.0, 1.0, 0.0 ],
                   "children": [
                     {
                       "name": "up_axisX",
@@ -3533,7 +3530,7 @@
                       "name": "up_axisY",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "up_axisZ",
@@ -3546,19 +3543,19 @@
                   "name": "up_vector",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ -0.0, 200.0, 0.0 ],
                   "children": [
                     {
                       "name": "up_vectorX",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": -0.0
                     },
                     {
                       "name": "up_vectorY",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 200.0
                     },
                     {
                       "name": "up_vectorZ",
@@ -3584,13 +3581,13 @@
                   "name": "input1",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, 10.0 ],
                   "children": [
                     {
                       "name": "input1X",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "input1Y",
@@ -3602,20 +3599,20 @@
                       "name": "input1Z",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     } ]
                 },
                 {
                   "name": "input2",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, -10.0 ],
                   "children": [
                     {
                       "name": "input2X",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "input2Y",
@@ -3627,7 +3624,7 @@
                       "name": "input2Z",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": -10.0
                     } ]
                 },
                 {
@@ -3640,19 +3637,19 @@
                   "name": "output",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ -0.0, 200.0, 0.0 ],
                   "children": [
                     {
                       "name": "outputX",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": -0.0
                     },
                     {
                       "name": "outputY",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 200.0
                     },
                     {
                       "name": "outputZ",
@@ -3678,19 +3675,19 @@
                   "name": "input1",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
                 },
                 {
                   "name": "input2",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865477, 0.0, 0.7071067811865476, 0.0, 2.2204460492503135e-15, 0.0, 14.142135623730951, 1.0 ]
                 },
                 {
                   "name": "output",
                   "direction": "output",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865477, 0.0, 0.7071067811865476, 0.0, 14.142135623730951, 0.0, 0.0, 1.0 ]
                 } ],
               "graph": {
                 "nodes": [],
@@ -3715,19 +3712,19 @@
                   "name": "output",
                   "direction": "output",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
                 },
                 {
                   "name": "aim_axis",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 1.0, 0.0, 0.0 ],
                   "children": [
                     {
                       "name": "aim_axisX",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "aim_axisY",
@@ -3746,13 +3743,13 @@
                   "name": "aim_vector",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, -10.0 ],
                   "children": [
                     {
                       "name": "aim_vectorX",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "aim_vectorY",
@@ -3764,14 +3761,14 @@
                       "name": "aim_vectorZ",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": -10.0
                     } ]
                 },
                 {
                   "name": "up_axis",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 0.0, 1.0, 0.0 ],
                   "children": [
                     {
                       "name": "up_axisX",
@@ -3783,7 +3780,7 @@
                       "name": "up_axisY",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "up_axisZ",
@@ -3796,19 +3793,19 @@
                   "name": "up_vector",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ -0.0, 200.0, 0.0 ],
                   "children": [
                     {
                       "name": "up_vectorX",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": -0.0
                     },
                     {
                       "name": "up_vectorY",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 200.0
                     },
                     {
                       "name": "up_vectorZ",
@@ -3834,19 +3831,19 @@
                   "name": "input",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
                 },
                 {
                   "name": "translate",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 20.0, 0.0, 0.0 ],
                   "children": [
                     {
                       "name": "translateX",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 20.0
                     },
                     {
                       "name": "translateY",
@@ -3865,7 +3862,7 @@
                   "name": "euler",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 0.0, -0.0, 0.0 ],
                   "children": [
                     {
                       "name": "eulerX",
@@ -3877,7 +3874,7 @@
                       "name": "eulerY",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": -0.0
                     },
                     {
                       "name": "eulerZ",
@@ -3914,32 +3911,32 @@
                       "name": "quaternionW",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     } ]
                 },
                 {
                   "name": "scale",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 1.0, 1.0, 1.0 ],
                   "children": [
                     {
                       "name": "scaleX",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "scaleY",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     },
                     {
                       "name": "scaleZ",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 1.0
                     } ]
                 },
                 {
@@ -3984,13 +3981,13 @@
                   "name": "input",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 10.0, 0.0, -10.0, 1.0 ]
                 },
                 {
                   "name": "output",
                   "direction": "output",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865477, 0.0, 0.7071067811865476, 0.0, 2.2204460492503135e-15, 0.0, 14.142135623730951, 1.0 ]
                 } ],
               "graph": {
                 "nodes": [],
@@ -4009,19 +4006,19 @@
                   "name": "input1",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 10.0, 0.0, -10.0, 1.0 ]
                 },
                 {
                   "name": "input2",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
                 },
                 {
                   "name": "output",
                   "direction": "output",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ -2.220446049250313e-16, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, -2.220446049250313e-16, 0.0, 14.142135623730951, 0.0, 8.881784197001252e-16, 1.0 ]
                 } ],
               "graph": {
                 "nodes": [],
@@ -4040,13 +4037,13 @@
                   "name": "input",
                   "direction": "input",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
                 },
                 {
                   "name": "output",
                   "direction": "output",
                   "type": "Matrix4",
-                  "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+                  "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
                 } ],
               "graph": {
                 "nodes": [],
@@ -4065,13 +4062,13 @@
                   "name": "input1",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 20.0, 0.0, 0.0 ],
                   "children": [
                     {
                       "name": "input1X",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 20.0
                     },
                     {
                       "name": "input1Y",
@@ -4090,13 +4087,13 @@
                   "name": "input2",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, -10.0 ],
                   "children": [
                     {
                       "name": "input2X",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "input2Y",
@@ -4108,20 +4105,20 @@
                       "name": "input2Z",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": -10.0
                     } ]
                 },
                 {
                   "name": "output",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, 10.0 ],
                   "children": [
                     {
                       "name": "outputX",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "outputY",
@@ -4133,7 +4130,7 @@
                       "name": "outputZ",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     } ]
                 } ],
               "graph": {
@@ -4153,13 +4150,13 @@
                   "name": "input1",
                   "direction": "input",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, -10.0 ],
                   "children": [
                     {
                       "name": "input1X",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "input1Y",
@@ -4171,7 +4168,7 @@
                       "name": "input1Z",
                       "direction": "input",
                       "type": "float",
-                      "value": 0.0
+                      "value": -10.0
                     } ]
                 },
                 {
@@ -4203,13 +4200,13 @@
                   "name": "output",
                   "direction": "output",
                   "type": "Vector3",
-                  "value": [ 0.0, 0.0, 0.0 ],
+                  "value": [ 10.0, 0.0, -10.0 ],
                   "children": [
                     {
                       "name": "outputX",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": 10.0
                     },
                     {
                       "name": "outputY",
@@ -4221,7 +4218,7 @@
                       "name": "outputZ",
                       "direction": "output",
                       "type": "float",
-                      "value": 0.0
+                      "value": -10.0
                     } ]
                 } ],
               "graph": {
@@ -4390,25 +4387,25 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -4421,7 +4418,7 @@
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
@@ -4502,44 +4499,44 @@
             "name": "scale",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "rest_matrix",
             "direction": "input",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067764669192, 0.0, -0.7071067859061758, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067859061758, 0.0, 0.7071067764669192, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "inherits_transform",
             "direction": "input",
             "type": "bool",
-            "value": false
+            "value": true
           },
           {
             "name": "world_matrix",
             "direction": "output",
             "type": "Matrix4",
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067764669192, 0.0, -0.7071067859061758, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067859061758, 0.0, 0.7071067764669192, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "matrix",
@@ -4589,13 +4586,13 @@
             "name": "handle",
             "direction": "input",
             "type": "Vector3",
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "handleX",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "handleY",
@@ -4614,25 +4611,25 @@
             "name": "bone_a_length",
             "direction": "input",
             "type": "float",
-            "value": 0.0
+            "value": 14.142135623730951
           },
           {
             "name": "bone_b_length",
             "direction": "input",
             "type": "float",
-            "value": 0.0
+            "value": 14.142135623730951
           },
           {
             "name": "angle_a",
             "direction": "output",
             "type": "float",
-            "value": 0.0
+            "value": 45.000000382424254
           },
           {
             "name": "angle_b",
             "direction": "output",
             "type": "float",
-            "value": 0.0
+            "value": -90.00000078835163
           } ],
         "graph": {
           "nodes": [],
@@ -4651,7 +4648,7 @@
             "name": "input1",
             "direction": "input",
             "type": "Quaternion",
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ 0.0, 0.38268343544833555, 0.0, 0.9238795312341646 ],
             "children": [
               {
                 "name": "input1X",
@@ -4663,7 +4660,7 @@
                 "name": "input1Y",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 0.38268343544833555
               },
               {
                 "name": "input1Z",
@@ -4675,7 +4672,7 @@
                 "name": "input1W",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 0.9238795312341646
               } ]
           },
           {
@@ -4706,14 +4703,14 @@
                 "name": "input2W",
                 "direction": "input",
                 "type": "float",
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
             "name": "output",
             "direction": "output",
             "type": "Quaternion",
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ 0.0, 0.38268343544833555, 0.0, 0.9238795312341646 ],
             "children": [
               {
                 "name": "outputX",
@@ -4725,7 +4722,7 @@
                 "name": "outputY",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 0.38268343544833555
               },
               {
                 "name": "outputZ",
@@ -4737,7 +4734,7 @@
                 "name": "outputW",
                 "direction": "output",
                 "type": "float",
-                "value": 0.0
+                "value": 0.9238795312341646
               } ]
           } ],
         "graph": {

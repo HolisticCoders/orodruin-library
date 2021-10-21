@@ -57,25 +57,25 @@
       "name": "scale",
       "direction": "input",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
+      "value": [ 1.0, 1.0, 1.0 ],
       "children": [
         {
           "name": "scaleX",
           "direction": "input",
           "type": "float",
-          "value": 0.0
+          "value": 1.0
         },
         {
           "name": "scaleY",
           "direction": "input",
           "type": "float",
-          "value": 0.0
+          "value": 1.0
         },
         {
           "name": "scaleZ",
           "direction": "input",
           "type": "float",
-          "value": 0.0
+          "value": 1.0
         } ]
     },
     {
@@ -88,7 +88,7 @@
       "name": "inherits_transform",
       "direction": "input",
       "type": "bool",
-      "value": false
+      "value": true
     },
     {
       "name": "world_matrix",
