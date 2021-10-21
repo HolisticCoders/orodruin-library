@@ -2,6 +2,9 @@
   "name": "RIG_IK",
   "type": "RIG_IK",
   "library": "orodruin-library",
+  "editor": {
+    "position": [ -6.625, 2.125 ]
+  },
   "ports": [],
   "graph": {
     "nodes": [
@@ -9,6 +12,9 @@
         "name": "MatrixDecompose8",
         "type": "MatrixDecompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 319.8749999999994, -1165.7499999999995 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -156,6 +162,9 @@
         "name": "MatrixDecompose4",
         "type": "MatrixDecompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 1281.3749999999995, -761.7499999999997 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -303,6 +312,9 @@
         "name": "Locator2",
         "type": "Locator",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 9.07499999999925, -1166.5499999999997 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -412,6 +424,9 @@
         "name": "VectorSubstract3",
         "type": "VectorSubstract",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 643.3749999999991, -1357.2499999999995 ]
+        },
         "ports": [
           {
             "name": "input1",
@@ -497,6 +512,9 @@
         "name": "VectorSubstract",
         "type": "VectorSubstract",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 790.8749999999991, -637.2499999999997 ]
+        },
         "ports": [
           {
             "name": "input1",
@@ -582,6 +600,9 @@
         "name": "QuaternionFromAxisAngle1",
         "type": "QuaternionFromAxisAngle",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 1757.8749999999995, -815.7499999999997 ]
+        },
         "ports": [
           {
             "name": "axis",
@@ -654,6 +675,9 @@
         "name": "MatrixCompose1",
         "type": "MatrixCompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 2109.375, -1212.2499999999995 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -801,6 +825,9 @@
         "name": "Locator",
         "type": "Locator",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 9.31499999999994, -1774.8699999999997 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -910,6 +937,9 @@
         "name": "MatrixDecompose",
         "type": "MatrixDecompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 557.8749999999991, -811.7499999999997 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -1057,6 +1087,9 @@
         "name": "ik_pv_CON",
         "type": "Control",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 342.5149999999997, -508.70999999999924 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -1166,6 +1199,9 @@
         "name": "VectorLength",
         "type": "VectorLength",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 883.3749999999995, -1342.2499999999995 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -1207,6 +1243,9 @@
         "name": "Joint2",
         "type": "Joint",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 2849.7749999999996, -1315.6299999999997 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -1316,6 +1355,9 @@
         "name": "VectorCross",
         "type": "VectorCross",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 1008.8749999999995, -587.2499999999997 ]
+        },
         "ports": [
           {
             "name": "input1",
@@ -1407,6 +1449,9 @@
         "name": "ik_end_CON",
         "type": "Control",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 335.47499999999974, -211.02999999999963 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -1516,6 +1561,9 @@
         "name": "QuaternionFromAxisAngle",
         "type": "QuaternionFromAxisAngle",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 2049.375, -759.7499999999997 ]
+        },
         "ports": [
           {
             "name": "axis",
@@ -1588,6 +1636,9 @@
         "name": "MatrixDecompose5",
         "type": "MatrixDecompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 1862.1749999999997, -1806.2499999999998 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -1735,6 +1786,9 @@
         "name": "MatrixDecompose1",
         "type": "MatrixDecompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 557.2349999999994, -517.91 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -1882,6 +1936,9 @@
         "name": "VectorLength1",
         "type": "VectorLength",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 853.0749999999998, -1174.2699999999995 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -1923,6 +1980,9 @@
         "name": "VectorSubstract1",
         "type": "VectorSubstract",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 778.6349999999998, -457.2099999999997 ]
+        },
         "ports": [
           {
             "name": "input1",
@@ -2008,6 +2068,9 @@
         "name": "MatrixCompose",
         "type": "MatrixCompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 2473.675, -832.2299999999997 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -2155,6 +2218,9 @@
         "name": "MatrixDecompose7",
         "type": "MatrixDecompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 326.11499999999916, -1432.2299999999996 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -2302,6 +2368,9 @@
         "name": "MatrixDecompose2",
         "type": "MatrixDecompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 557.315, -211.43000000000018 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -2449,6 +2518,9 @@
         "name": "Locator1",
         "type": "Locator",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 10.434999999999832, -1468.2299999999996 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -2558,6 +2630,9 @@
         "name": "Aim",
         "type": "Aim",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 1005.3899999999996, -878.3099999999996 ]
+        },
         "ports": [
           {
             "name": "base_matrix",
@@ -2680,6 +2755,9 @@
         "name": "MatrixDecompose6",
         "type": "MatrixDecompose",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 323.9549999999993, -1731.4699999999998 ]
+        },
         "ports": [
           {
             "name": "input",
@@ -2827,6 +2905,9 @@
         "name": "VectorSubstract2",
         "type": "VectorSubstract",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 616.494999999999, -1157.3299999999995 ]
+        },
         "ports": [
           {
             "name": "input1",
@@ -2912,6 +2993,9 @@
         "name": "Joint1",
         "type": "Joint",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 2808.995, -1013.0299999999993 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -3021,6 +3105,9 @@
         "name": "TwoBoneRestSolver",
         "type": "TwoBoneRestSolver",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 1357.7749999999996, -1509.8899999999994 ]
+        },
         "ports": [
           {
             "name": "rest_matrix_a",
@@ -3064,6 +3151,9 @@
               "name": "MatrixDecompose1",
               "type": "MatrixDecompose",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input",
@@ -3211,6 +3301,9 @@
               "name": "MatrixDecompose",
               "type": "MatrixDecompose",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input",
@@ -3358,6 +3451,9 @@
               "name": "Aim1",
               "type": "Aim",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "base_matrix",
@@ -3480,6 +3576,9 @@
               "name": "plane_normal",
               "type": "VectorCross",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input1",
@@ -3571,6 +3670,9 @@
               "name": "MatrixMultiply1",
               "type": "MatrixMultiply",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input1",
@@ -3599,6 +3701,9 @@
               "name": "Aim",
               "type": "Aim",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "base_matrix",
@@ -3721,6 +3826,9 @@
               "name": "MatrixDecompose2",
               "type": "MatrixDecompose",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input",
@@ -3868,6 +3976,9 @@
               "name": "MatrixInverse1",
               "type": "MatrixInverse",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input",
@@ -3890,6 +4001,9 @@
               "name": "MatrixMultiply",
               "type": "MatrixMultiply",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input1",
@@ -3918,6 +4032,9 @@
               "name": "MatrixInverse",
               "type": "MatrixInverse",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input",
@@ -3940,6 +4057,9 @@
               "name": "bc",
               "type": "VectorSubstract",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input1",
@@ -4025,6 +4145,9 @@
               "name": "ab",
               "type": "VectorSubstract",
               "library": "orodruin-library",
+              "editor": {
+                "position": [ -1.0, -1.0 ]
+              },
               "ports": [
                 {
                   "name": "input1",
@@ -4209,6 +4332,9 @@
         "name": "ik_base_CON",
         "type": "Control",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 336.59499999999963, -804.5499999999994 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -4318,6 +4444,9 @@
         "name": "Joint",
         "type": "Joint",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 2793.955, -1630.5699999999993 ]
+        },
         "ports": [
           {
             "name": "translate",
@@ -4427,6 +4556,9 @@
         "name": "TwoBoneIK2D",
         "type": "TwoBoneIK2D",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 1517.3749999999995, -891.7499999999997 ]
+        },
         "ports": [
           {
             "name": "base",
@@ -4511,6 +4643,9 @@
         "name": "QuaternionMultiply",
         "type": "QuaternionMultiply",
         "library": "orodruin-library",
+        "editor": {
+          "position": [ 2235.955, -644.2699999999996 ]
+        },
         "ports": [
           {
             "name": "input1",
