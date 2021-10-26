@@ -1,22 +1,30 @@
 {
-  "name": "MatrixInverse",
-  "type": "MatrixInverse",
-  "library": "orodruin-library",
-  "ports": [
-    {
-      "name": "input",
-      "direction": "input",
-      "type": "Matrix4",
-      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+    "name": "MatrixInverse",
+    "type": "MatrixInverse",
+    "library": "orodruin-library",
+    "metadata": {
+        "serialization_type": "definition"
     },
-    {
-      "name": "output",
-      "direction": "output",
-      "type": "Matrix4",
-      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
-    } ],
-  "graph": {
-    "nodes": [],
-    "connections": []
-  }
+    "ports": [
+        {
+            "name": "input",
+    "metadata": {
+        "serialization_type": "definition"
+    },
+            "direction": "input",
+            "type": "Matrix4"
+        },
+        {
+            "name": "output",
+    "metadata": {
+        "serialization_type": "definition"
+    },
+            "direction": "output",
+            "type": "Matrix4"
+        }
+    ],
+    "graph": {
+        "nodes": [],
+        "connections": []
+    }
 }

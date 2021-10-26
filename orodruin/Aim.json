@@ -2,117 +2,156 @@
   "name": "Aim",
   "type": "Aim",
   "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
   "ports": [
     {
       "name": "base_matrix",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
-      "type": "Matrix4",
-      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+      "type": "Matrix4"
     },
     {
       "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "output",
-      "type": "Matrix4",
-      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+      "type": "Matrix4"
     },
     {
       "name": "aim_axis",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "aim_axisX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "aim_axisY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "aim_axisZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "aim_vector",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "aim_vectorX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "aim_vectorY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "aim_vectorZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "up_axis",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "up_axisX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "up_axisY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "up_axisZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "up_vector",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "up_vectorX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "up_vectorY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "up_vectorZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     } ],
   "graph": {

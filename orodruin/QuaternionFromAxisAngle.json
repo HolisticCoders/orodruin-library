@@ -2,67 +2,90 @@
   "name": "QuaternionFromAxisAngle",
   "type": "QuaternionFromAxisAngle",
   "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
   "ports": [
     {
       "name": "axis",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "axisX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "axisY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "axisZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "angle",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
-      "type": "float",
-      "value": 0.0
+      "type": "float"
     },
     {
       "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "output",
       "type": "Quaternion",
-      "value": [ 0.0, 0.0, 0.0, 1.0 ],
       "children": [
         {
           "name": "outputX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "outputY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "outputZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "outputW",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     } ],
   "graph": {

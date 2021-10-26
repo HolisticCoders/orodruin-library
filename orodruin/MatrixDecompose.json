@@ -2,142 +2,189 @@
   "name": "MatrixDecompose",
   "type": "MatrixDecompose",
   "library": "orodruin-library",
+    "metadata": {
+        "serialization_type": "definition"
+    },
   "ports": [
     {
       "name": "input",
+    "metadata": {
+        "serialization_type": "definition"
+    },
       "direction": "input",
-      "type": "Matrix4",
-      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+      "type": "Matrix4"
     },
     {
       "name": "translate",
+    "metadata": {
+        "serialization_type": "definition"
+    },
       "direction": "output",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "translateX",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "translateY",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "translateZ",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "euler",
+    "metadata": {
+        "serialization_type": "definition"
+    },
       "direction": "output",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "eulerX",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "eulerY",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "eulerZ",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "quaternion",
+    "metadata": {
+        "serialization_type": "definition"
+    },
       "direction": "output",
       "type": "Quaternion",
-      "value": [ 0.0, 0.0, 0.0, 1.0 ],
       "children": [
         {
           "name": "quaternionX",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "quaternionY",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "quaternionZ",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "quaternionW",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "scale",
+    "metadata": {
+        "serialization_type": "definition"
+    },
       "direction": "output",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "scaleX",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "scaleY",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "scaleZ",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "shear",
+    "metadata": {
+        "serialization_type": "definition"
+    },
       "direction": "output",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "shearX",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "shearY",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "shearZ",
+    "metadata": {
+        "serialization_type": "definition"
+    },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     } ],
   "graph": {

@@ -2,24 +2,33 @@
   "name": "Multiply",
   "type": "Multiply",
   "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
   "ports": [
     {
       "name": "input1",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
-      "type": "float",
-      "value": 0.0
+      "type": "float"
     },
     {
       "name": "input2",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
-      "type": "float",
-      "value": 0.0
+      "type": "float"
     },
     {
       "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "output",
-      "type": "float",
-      "value": 0.0
+      "type": "float"
     } ],
   "graph": {
     "nodes": [],

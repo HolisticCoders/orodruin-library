@@ -2,80 +2,107 @@
   "name": "VectorAdd",
   "type": "VectorAdd",
   "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
   "ports": [
     {
       "name": "input1",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "input1X",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "input1Y",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "input1Z",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "input2",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "input2X",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "input2Y",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "input2Z",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "output",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "outputX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "outputY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "outputZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     } ],
   "graph": {

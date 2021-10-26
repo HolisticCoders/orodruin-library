@@ -2,30 +2,41 @@
   "name": "Clamp",
   "type": "Clamp",
   "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
   "ports": [
     {
       "name": "input",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
-      "type": "float",
-      "value": 0.0
+      "type": "float"
     },
     {
       "name": "min",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
-      "type": "float",
-      "value": 0.0
+      "type": "float"
     },
     {
       "name": "max",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
-      "type": "float",
-      "value": 0.0
+      "type": "float"
     },
     {
       "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "output",
-      "type": "float",
-      "value": 0.0
+      "type": "float"
     } ],
   "graph": {
     "nodes": [],

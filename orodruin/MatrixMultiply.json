@@ -1,28 +1,38 @@
 {
-  "name": "MatrixMultiply",
-  "type": "MatrixMultiply",
-  "library": "orodruin-library",
-  "ports": [
-    {
-      "name": "input1",
-      "direction": "input",
-      "type": "Matrix4",
-      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+    "name": "MatrixMultiply",
+    "type": "MatrixMultiply",
+    "library": "orodruin-library",
+    "metadata": {
+        "serialization_type": "definition"
     },
-    {
-      "name": "input2",
-      "direction": "input",
-      "type": "Matrix4",
-      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
-    },
-    {
-      "name": "output",
-      "direction": "output",
-      "type": "Matrix4",
-      "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
-    } ],
-  "graph": {
-    "nodes": [],
-    "connections": []
-  }
+    "ports": [
+        {
+            "name": "input1",
+            "metadata": {
+                "serialization_type": "definition"
+            },
+            "direction": "input",
+            "type": "Matrix4"
+        },
+        {
+            "name": "input2",
+            "metadata": {
+                "serialization_type": "definition"
+            },
+            "direction": "input",
+            "type": "Matrix4"
+        },
+        {
+            "name": "output",
+            "metadata": {
+                "serialization_type": "definition"
+            },
+            "direction": "output",
+            "type": "Matrix4"
+        }
+    ],
+    "graph": {
+        "nodes": [],
+        "connections": []
+    }
 }

@@ -1,13 +1,13 @@
 {
-  "name": "Joint",
-  "type": "Joint",
+  "name": "TwoBoneIK2D",
+  "type": "TwoBoneIK2D",
   "library": "orodruin-library",
   "metadata": {
     "serialization_type": "definition"
   },
   "ports": [
     {
-      "name": "translate",
+      "name": "base",
       "metadata": {
         "serialization_type": "definition"
       },
@@ -15,7 +15,7 @@
       "type": "Vector3",
       "children": [
         {
-          "name": "translateX",
+          "name": "baseX",
           "metadata": {
             "serialization_type": "definition"
           },
@@ -23,7 +23,7 @@
           "type": "float"
         },
         {
-          "name": "translateY",
+          "name": "baseY",
           "metadata": {
             "serialization_type": "definition"
           },
@@ -31,7 +31,7 @@
           "type": "float"
         },
         {
-          "name": "translateZ",
+          "name": "baseZ",
           "metadata": {
             "serialization_type": "definition"
           },
@@ -40,7 +40,7 @@
         } ]
     },
     {
-      "name": "rotate",
+      "name": "handle",
       "metadata": {
         "serialization_type": "definition"
       },
@@ -48,7 +48,7 @@
       "type": "Vector3",
       "children": [
         {
-          "name": "rotateX",
+          "name": "handleX",
           "metadata": {
             "serialization_type": "definition"
           },
@@ -56,7 +56,7 @@
           "type": "float"
         },
         {
-          "name": "rotateY",
+          "name": "handleY",
           "metadata": {
             "serialization_type": "definition"
           },
@@ -64,7 +64,7 @@
           "type": "float"
         },
         {
-          "name": "rotateZ",
+          "name": "handleZ",
           "metadata": {
             "serialization_type": "definition"
           },
@@ -73,69 +73,36 @@
         } ]
     },
     {
-      "name": "scale",
+      "name": "bone_a_length",
       "metadata": {
         "serialization_type": "definition"
       },
       "direction": "input",
-      "type": "Vector3",
-      "children": [
-        {
-          "name": "scaleX",
-          "metadata": {
-            "serialization_type": "definition"
-          },
-          "direction": "input",
-          "type": "float"
-        },
-        {
-          "name": "scaleY",
-          "metadata": {
-            "serialization_type": "definition"
-          },
-          "direction": "input",
-          "type": "float"
-        },
-        {
-          "name": "scaleZ",
-          "metadata": {
-            "serialization_type": "definition"
-          },
-          "direction": "input",
-          "type": "float"
-        } ]
+      "type": "float"
     },
     {
-      "name": "rest_matrix",
+      "name": "bone_b_length",
       "metadata": {
         "serialization_type": "definition"
       },
       "direction": "input",
-      "type": "Matrix4"
+      "type": "float"
     },
     {
-      "name": "inherits_transform",
-      "metadata": {
-        "serialization_type": "definition"
-      },
-      "direction": "input",
-      "type": "bool"
-    },
-    {
-      "name": "world_matrix",
+      "name": "angle_a",
       "metadata": {
         "serialization_type": "definition"
       },
       "direction": "output",
-      "type": "Matrix4"
+      "type": "float"
     },
     {
-      "name": "matrix",
+      "name": "angle_b",
       "metadata": {
         "serialization_type": "definition"
       },
       "direction": "output",
-      "type": "Matrix4"
+      "type": "float"
     } ],
   "graph": {
     "nodes": [],

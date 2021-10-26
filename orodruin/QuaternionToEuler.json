@@ -2,61 +2,82 @@
   "name": "QuaternionToEuler",
   "type": "QuaternionToEuler",
   "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
   "ports": [
     {
       "name": "input",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "input",
       "type": "Quaternion",
-      "value": [ 0.0, 0.0, 0.0, 1.0 ],
       "children": [
         {
           "name": "inputX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "inputY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "inputZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "inputW",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "input",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     },
     {
       "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
       "direction": "output",
       "type": "Vector3",
-      "value": [ 0.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "outputX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "outputY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         },
         {
           "name": "outputZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
           "direction": "output",
-          "type": "float",
-          "value": 0.0
+          "type": "float"
         } ]
     } ],
   "graph": {
