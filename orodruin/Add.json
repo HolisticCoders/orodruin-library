@@ -2,6 +2,9 @@
   "name": "Add",
   "type": "Add",
   "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
   "ports": [
     {
       "name": "input1",
@@ -20,7 +23,8 @@
       "direction": "output",
       "type": "float",
       "value": 0.0
-    } ],
+    }
+  ],
   "graph": {
     "nodes": [],
     "connections": []
