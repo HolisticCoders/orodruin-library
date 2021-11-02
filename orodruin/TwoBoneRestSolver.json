@@ -64,7 +64,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 250.0, -25.0 ]
         },
         "ports": [
           {
@@ -72,21 +72,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "translate",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "translateX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "translateY",
@@ -100,7 +100,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -108,7 +108,7 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -122,7 +122,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -165,7 +165,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -173,28 +173,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -239,7 +239,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 250.0, -250.0 ]
         },
         "ports": [
           {
@@ -283,7 +283,7 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -297,7 +297,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -340,7 +340,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -348,28 +348,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -414,7 +414,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 875.0, 175.0 ]
         },
         "ports": [
           {
@@ -422,28 +422,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "aim_axis",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "aim_axisX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "aim_axisY",
@@ -465,14 +465,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, 10.0 ],
             "children": [
               {
                 "name": "aim_vectorX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "aim_vectorY",
@@ -486,7 +486,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               } ]
           },
           {
@@ -523,21 +523,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ -0.0, 200.0, 0.0 ],
             "children": [
               {
                 "name": "up_vectorX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "up_vectorY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 200.0
               },
               {
                 "name": "up_vectorZ",
@@ -560,7 +560,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 700.0, -75.0 ]
         },
         "ports": [
           {
@@ -568,14 +568,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, 10.0 ],
             "children": [
               {
                 "name": "input1X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "input1Y",
@@ -589,7 +589,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               } ]
           },
           {
@@ -597,14 +597,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "input2X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "input2Y",
@@ -618,7 +618,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -633,21 +633,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ -0.0, 200.0, 0.0 ],
             "children": [
               {
                 "name": "outputX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "outputY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 200.0
               },
               {
                 "name": "outputZ",
@@ -670,7 +670,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 1375.0, 75.0 ]
         },
         "ports": [
           {
@@ -678,21 +678,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "input2",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865477, 0.0, 0.7071067811865476, 0.0, 2.2204460492503135e-15, 0.0, 14.142135623730951, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865477, 0.0, 0.7071067811865476, 0.0, 14.142135623730951, 0.0, 0.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -707,7 +707,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 875.0, -350.0 ]
         },
         "ports": [
           {
@@ -722,21 +722,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "aim_axis",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "aim_axisX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "aim_axisY",
@@ -758,14 +758,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "aim_vectorX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "aim_vectorY",
@@ -779,7 +779,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -787,7 +787,7 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, 1.0, 0.0 ],
             "children": [
               {
                 "name": "up_axisX",
@@ -801,7 +801,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "up_axisZ",
@@ -816,21 +816,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ -0.0, 200.0, 0.0 ],
             "children": [
               {
                 "name": "up_vectorX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "up_vectorY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 200.0
               },
               {
                 "name": "up_vectorZ",
@@ -853,7 +853,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 250.0, 200.0 ]
         },
         "ports": [
           {
@@ -861,21 +861,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "translate",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "translateX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "translateY",
@@ -897,7 +897,7 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, -0.0, 0.0 ],
             "children": [
               {
                 "name": "eulerX",
@@ -911,7 +911,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "eulerZ",
@@ -954,7 +954,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -962,28 +962,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 1.0, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "scaleZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               } ]
           },
           {
@@ -1028,7 +1028,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 1125.0, 200.0 ]
         },
         "ports": [
           {
@@ -1036,14 +1036,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865477, 0.0, 0.7071067811865476, 0.0, 2.2204460492503135e-15, 0.0, 14.142135623730951, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -1058,7 +1058,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 1375.0, -50.0 ]
         },
         "ports": [
           {
@@ -1066,21 +1066,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 10.0, 0.0, -10.0, 1.0 ]
           },
           {
             "name": "input2",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ -2.220446049250313e-16, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, -2.220446049250313e-16, 0.0, 14.142135623730951, 0.0, 8.881784197001252e-16, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -1095,7 +1095,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 1125.0, -100.0 ]
         },
         "ports": [
           {
@@ -1103,14 +1103,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, -0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, 0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.7071067811865475, 0.0, 0.7071067811865476, 0.0, 0.0, 1.0, 0.0, 0.0, -0.7071067811865476, 0.0, 0.7071067811865475, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -1125,7 +1125,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 475.0, 75.0 ]
         },
         "ports": [
           {
@@ -1133,14 +1133,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 20.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "input1X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 20.0
               },
               {
                 "name": "input1Y",
@@ -1162,14 +1162,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "input2X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "input2Y",
@@ -1183,7 +1183,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -1191,14 +1191,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, 10.0 ],
             "children": [
               {
                 "name": "outputX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "outputY",
@@ -1212,7 +1212,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               } ]
           } ],
         "graph": {
@@ -1228,7 +1228,7 @@
           "serialization_type": "instance"
         },
         "editor": {
-          "position": [ 332.0, 689.0 ]
+          "position": [ 475.0, -175.0 ]
         },
         "ports": [
           {
@@ -1236,14 +1236,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "input1X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "input1Y",
@@ -1257,7 +1257,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -10.0
               } ]
           },
           {
@@ -1294,14 +1294,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 10.0, 0.0, -10.0 ],
             "children": [
               {
                 "name": "outputX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "name": "outputY",
@@ -1315,7 +1315,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -10.0
               } ]
           } ],
         "graph": {
