@@ -1,88 +1,136 @@
 {
-    "definitions": {},
+  "name": "QuaternionMultiply",
+  "type": "QuaternionMultiply",
+  "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
+  "ports": [
+    {
+      "name": "input1",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Quaternion",
+      "children": [
+        {
+          "name": "input1X",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "input1Y",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "input1Z",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "input1W",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        } ]
+    },
+    {
+      "name": "input2",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Quaternion",
+      "children": [
+        {
+          "name": "input2X",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "input2Y",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "input2Z",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "input2W",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        } ]
+    },
+    {
+      "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "Quaternion",
+      "children": [
+        {
+          "name": "outputX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "output",
+          "type": "float"
+        },
+        {
+          "name": "outputY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "output",
+          "type": "float"
+        },
+        {
+          "name": "outputZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "output",
+          "type": "float"
+        },
+        {
+          "name": "outputW",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "output",
+          "type": "float"
+        } ]
+    } ],
+  "graph": {
     "nodes": [],
-    "ports": [
-        {
-            "name": "input1",
-            "direction": "input",
-            "type": "Quaternion",
-            "children": [
-                {
-                    "name": "input1X",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "input1Y",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "input1Z",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "input1W",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "input2",
-            "direction": "input",
-            "type": "Quaternion",
-            "children": [
-                {
-                    "name": "input2X",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "input2Y",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "input2Z",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "input2W",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "output",
-            "direction": "output",
-            "type": "Quaternion",
-            "children": [
-                {
-                    "name": "outputX",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputY",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputZ",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputW",
-                    "direction": "output",
-                    "type": "float"
-                }
-            ]
-        }
-    ],
     "connections": []
+  }
 }

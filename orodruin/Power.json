@@ -1,22 +1,37 @@
 {
-    "definitions": {},
+  "name": "Power",
+  "type": "Power",
+  "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
+  "ports": [
+    {
+      "name": "input1",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "input2",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "float"
+    } ],
+  "graph": {
     "nodes": [],
-    "ports": [
-        {
-            "name": "input1",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "input2",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "output",
-            "direction": "output",
-            "type": "float"
-        }
-    ],
     "connections": []
+  }
 }

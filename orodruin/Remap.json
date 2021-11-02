@@ -1,37 +1,61 @@
 {
-    "definitions": {},
+  "name": "Remap",
+  "type": "Remap",
+  "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
+  "ports": [
+    {
+      "name": "input",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "old_min",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "old_max",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "new_min",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "new_max",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "float"
+    } ],
+  "graph": {
     "nodes": [],
-    "ports": [
-        {
-            "name": "input",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "old_min",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "old_max",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "new_min",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "new_max",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "output",
-            "direction": "output",
-            "type": "float"
-        }
-    ],
     "connections": []
+  }
 }

@@ -39,6 +39,6 @@ class Control(OMNode):
             "scaleZ": "scaleZ",
             "rest_matrix": "offsetParentMatrix",
             "inherits_transform": "inheritsTransform",
-            "world_matrix": "worldMatrix",
+            "world_matrix": "worldMatrix[0]",
             "matrix": "matrix",
         }

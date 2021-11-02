@@ -1,17 +1,30 @@
 {
-    "definitions": {},
-    "nodes": [],
+    "name": "MatrixInverse",
+    "type": "MatrixInverse",
+    "library": "orodruin-library",
+    "metadata": {
+        "serialization_type": "definition"
+    },
     "ports": [
         {
             "name": "input",
+    "metadata": {
+        "serialization_type": "definition"
+    },
             "direction": "input",
             "type": "Matrix4"
         },
         {
             "name": "output",
+    "metadata": {
+        "serialization_type": "definition"
+    },
             "direction": "output",
             "type": "Matrix4"
         }
     ],
-    "connections": []
+    "graph": {
+        "nodes": [],
+        "connections": []
+    }
 }

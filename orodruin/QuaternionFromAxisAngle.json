@@ -1,61 +1,95 @@
 {
-    "definitions": {},
+  "name": "QuaternionFromAxisAngle",
+  "type": "QuaternionFromAxisAngle",
+  "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
+  "ports": [
+    {
+      "name": "axis",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Vector3",
+      "children": [
+        {
+          "name": "axisX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "axisY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "axisZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        } ]
+    },
+    {
+      "name": "angle",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "output",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "Quaternion",
+      "children": [
+        {
+          "name": "outputX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "output",
+          "type": "float"
+        },
+        {
+          "name": "outputY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "output",
+          "type": "float"
+        },
+        {
+          "name": "outputZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "output",
+          "type": "float"
+        },
+        {
+          "name": "outputW",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "output",
+          "type": "float"
+        } ]
+    } ],
+  "graph": {
     "nodes": [],
-    "ports": [
-        {
-            "name": "axis",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "axisX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "axisY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "axisZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "angle",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "output",
-            "direction": "output",
-            "type": "Quaternion",
-            "children": [
-                {
-                    "name": "outputX",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputY",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputZ",
-                    "direction": "output",
-                    "type": "float"
-                },
-                {
-                    "name": "outputW",
-                    "direction": "output",
-                    "type": "float"
-                }
-            ]
-        }
-    ],
     "connections": []
+  }
 }

@@ -1,94 +1,144 @@
 {
-    "definitions": {},
+  "name": "Joint",
+  "type": "Joint",
+  "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
+  "ports": [
+    {
+      "name": "translate",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Vector3",
+      "children": [
+        {
+          "name": "translateX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "translateY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "translateZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        } ]
+    },
+    {
+      "name": "rotate",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Vector3",
+      "children": [
+        {
+          "name": "rotateX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "rotateY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "rotateZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        } ]
+    },
+    {
+      "name": "scale",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Vector3",
+      "children": [
+        {
+          "name": "scaleX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "scaleY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "scaleZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        } ]
+    },
+    {
+      "name": "rest_matrix",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Matrix4"
+    },
+    {
+      "name": "inherits_transform",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "bool"
+    },
+    {
+      "name": "world_matrix",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "Matrix4"
+    },
+    {
+      "name": "matrix",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "Matrix4"
+    } ],
+  "graph": {
     "nodes": [],
-    "ports": [
-        {
-            "name": "translate",
-            "direction": "input",
-            "type": "Vector3",
-            "children":[
-                {
-                    "name": "translateX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "translateY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "translateZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "rotate",
-            "direction": "input",
-            "type": "Vector3",
-            "children":[
-                {
-                    "name": "rotateX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "rotateY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "rotateZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "scale",
-            "direction": "input",
-            "type": "Vector3",
-            "children":[
-                {
-                    "name": "scaleX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "scaleY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "scaleZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "rest_matrix",
-            "direction": "input",
-            "type": "Matrix4"
-        },
-        {
-            "name": "inherits_transform",
-            "direction": "input",
-            "type": "bool"
-        },
-
-        {
-            "name": "world_matrix",
-            "direction": "output",
-            "type": "Matrix4"
-        },
-        {
-            "name": "matrix",
-            "direction": "output",
-            "type": "Matrix4"
-        }
-    ],
     "connections": []
+  }
 }

@@ -1,71 +1,111 @@
 {
-    "definitions": {},
+  "name": "TwoBoneIK2D",
+  "type": "TwoBoneIK2D",
+  "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
+  "ports": [
+    {
+      "name": "base",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Vector3",
+      "children": [
+        {
+          "name": "baseX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "baseY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "baseZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        } ]
+    },
+    {
+      "name": "handle",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Vector3",
+      "children": [
+        {
+          "name": "handleX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "handleY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "handleZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        } ]
+    },
+    {
+      "name": "bone_a_length",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "bone_b_length",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "float"
+    },
+    {
+      "name": "angle_a",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "float"
+    },
+    {
+      "name": "angle_b",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "float"
+    } ],
+  "graph": {
     "nodes": [],
-    "ports": [
-        {
-            "name": "base",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "baseX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "baseY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "baseZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "handle",
-            "direction": "input",
-            "type": "Vector3",
-            "children": [
-                {
-                    "name": "handleX",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "handleY",
-                    "direction": "input",
-                    "type": "float"
-                },
-                {
-                    "name": "handleZ",
-                    "direction": "input",
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "name": "bone_a_length",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "bone_b_length",
-            "direction": "input",
-            "type": "float"
-        },
-        {
-            "name": "angle_a",
-            "direction": "output",
-            "type": "float"
-        },
-        {
-            "name": "angle_b",
-            "direction": "output",
-            "type": "float"
-        }
-    ],
     "connections": []
+  }
 }
