@@ -37,7 +37,8 @@
           },
           "direction": "input",
           "type": "float"
-        } ]
+        }
+      ]
     },
     {
       "name": "rotate",
@@ -70,7 +71,8 @@
           },
           "direction": "input",
           "type": "float"
-        } ]
+        }
+      ]
     },
     {
       "name": "scale",
@@ -103,7 +105,8 @@
           },
           "direction": "input",
           "type": "float"
-        } ]
+        }
+      ]
     },
     {
       "name": "rest_matrix",
@@ -122,6 +125,22 @@
       "type": "bool"
     },
     {
+      "name": "parent",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Reference"
+    },
+    {
+      "name": "self",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "output",
+      "type": "Reference"
+    },
+    {
       "name": "world_matrix",
       "metadata": {
         "serialization_type": "definition"
@@ -136,7 +155,8 @@
       },
       "direction": "output",
       "type": "Matrix4"
-    } ],
+    }
+  ],
   "graph": {
     "nodes": [],
     "connections": []

@@ -2,6 +2,8 @@ from typing import Dict
 
 import attr
 import cmdx
+from orodruin.core import Port
+from orodruin.core.utils import get_most_upstream_port
 from orodruin_maya import OMNode
 
 from maya import cmds
@@ -42,3 +44,16 @@ class Control(OMNode):
             "world_matrix": "worldMatrix[0]",
             "matrix": "matrix",
         }
+
+    def on_connection_received(self, port: Port) -> None:
+        if port.name() == "parent":
+            upstream_port = get_most_upstream_port(port)
+            parent_node = self._om_state.get_om_node(upstream_port.node())
+            parent_maya_node = parent_node.input_node()
+
+            if isinstance(parent_maya_node, cmdx.DagNode):
+                parent_maya_node.add_child(self._input_node)
+
+    def on_connection_removed(self, port: Port) -> None:
+        if port.name() == "parent":
+            cmds.parent(self._input_node.name(), world=True)
