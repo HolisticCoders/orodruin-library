@@ -1,0 +1,5989 @@
+{
+  "name": "Rig_Finger",
+  "type": "Rig_Finger",
+  "library": "orodruin-library",
+  "metadata": {
+    "serialization_type": "definition"
+  },
+  "ports": [
+    {
+      "name": "aim_axis",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Vector3",
+      "children": [
+        {
+          "name": "aim_axisX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "aim_axisY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "aim_axisZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "up_axis",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Vector3",
+      "children": [
+        {
+          "name": "up_axisX",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "up_axisY",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        },
+        {
+          "name": "up_axisZ",
+          "metadata": {
+            "serialization_type": "definition"
+          },
+          "direction": "input",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "guides_group",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Reference"
+    },
+    {
+      "name": "parent_joint",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Reference"
+    },
+    {
+      "name": "parent_control",
+      "metadata": {
+        "serialization_type": "definition"
+      },
+      "direction": "input",
+      "type": "Reference"
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "name": "start_JNT",
+        "type": "Joint",
+        "library": "orodruin-library",
+        "metadata": {
+          "serialization_type": "instance"
+        },
+        "editor": {
+          "position": [
+            775.0,
+            -150.0
+          ]
+        },
+        "ports": [
+          {
+            "name": "translate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "translateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "rotate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "rotateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "rotateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": -0.0
+              },
+              {
+                "name": "rotateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "scale",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "scaleX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "rest_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "inherits_transform",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": true
+          },
+          {
+            "name": "parent",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": ""
+          },
+          {
+            "name": "self",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": ""
+          },
+          {
+            "name": "world_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "graph": {
+          "nodes": [],
+          "connections": []
+        }
+      },
+      {
+        "name": "Rig_FK",
+        "type": "Rig_FK",
+        "library": "orodruin-library",
+        "metadata": {
+          "serialization_type": "instance"
+        },
+        "editor": {
+          "position": [
+            350.0,
+            225.0
+          ]
+        },
+        "ports": [
+          {
+            "name": "start_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "mid_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              27.597006565065488,
+              15.145194182255599,
+              -9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "end_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              40.0,
+              -1.7763568394002505e-15,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "start_guide",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "mid_guide",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              27.597006565065488,
+              15.145194182255599,
+              -9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "end_guide",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              12.402993434934512,
+              -15.1451941822556,
+              9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "start_local_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "mid_local_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "end_local_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "parent_control",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": ""
+          }
+        ],
+        "graph": {
+          "nodes": [
+            {
+              "name": "end_CON",
+              "type": "Control",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  75.0,
+                  0.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rotate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "rotateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rest_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    12.402993434934512,
+                    -15.1451941822556,
+                    9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "inherits_transform",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": true
+                },
+                {
+                  "name": "parent",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "self",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "world_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    40.0,
+                    -1.7763568394002505e-15,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "mid_CON",
+              "type": "Control",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -125.0,
+                  -150.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rotate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "rotateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rest_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "inherits_transform",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": true
+                },
+                {
+                  "name": "parent",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "self",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "world_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "start_CON",
+              "type": "Control",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -325.0,
+                  -425.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rotate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "rotateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rest_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "inherits_transform",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": true
+                },
+                {
+                  "name": "parent",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "self",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "world_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            }
+          ],
+          "connections": [
+            {
+              "source": "mid_CON.self",
+              "target": "end_CON.parent"
+            },
+            {
+              "source": "end_CON.world_matrix",
+              "target": ".end_matrix"
+            },
+            {
+              "source": "start_CON.self",
+              "target": "mid_CON.parent"
+            },
+            {
+              "source": "mid_CON.world_matrix",
+              "target": ".mid_matrix"
+            },
+            {
+              "source": "start_CON.world_matrix",
+              "target": ".start_matrix"
+            },
+            {
+              "source": ".end_guide",
+              "target": "end_CON.rest_matrix"
+            },
+            {
+              "source": ".mid_guide",
+              "target": "mid_CON.rest_matrix"
+            },
+            {
+              "source": ".start_guide",
+              "target": "start_CON.rest_matrix"
+            },
+            {
+              "source": "start_CON.matrix",
+              "target": ".start_local_matrix"
+            },
+            {
+              "source": "mid_CON.matrix",
+              "target": ".mid_local_matrix"
+            },
+            {
+              "source": "end_CON.matrix",
+              "target": ".end_local_matrix"
+            }
+          ]
+        }
+      },
+      {
+        "name": "RestSolver_TwoBone",
+        "type": "RestSolver_TwoBone",
+        "library": "orodruin-library",
+        "metadata": {
+          "serialization_type": "instance"
+        },
+        "editor": {
+          "position": [
+            150.0,
+            50.0
+          ]
+        },
+        "ports": [
+          {
+            "name": "start_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "mid_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              27.597006565065488,
+              15.145194182255599,
+              -9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "end_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              12.402993434934512,
+              -15.1451941822556,
+              9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "start_inverse_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "mid_inverse_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -27.597006565065488,
+              -15.1451941822556,
+              9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "end_inverse_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -40.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "aim_axis",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "aim_axisX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "aim_axisY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "aim_axisZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "up_axis",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "up_axisX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "up_axisY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "up_axisZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "guides_group",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": ""
+          }
+        ],
+        "graph": {
+          "nodes": [
+            {
+              "name": "MatrixDecompose2",
+              "type": "MatrixDecompose",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -775.0,
+                  225.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    40.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    40.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 40.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "euler",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    -0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "eulerX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "eulerY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -0.0
+                    },
+                    {
+                      "name": "eulerZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "quaternion",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "quaternionX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionW",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "shear",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "shearX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixMultiply",
+              "type": "MatrixMultiply",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  475.0,
+                  -275.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input1",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "input2",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "start_aim",
+              "type": "Aim",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -125.0,
+                  -475.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "base_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "aim_axis",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "aim_axisX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "aim_axisY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "aim_axisZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "aim_vector",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    27.59700584411621,
+                    15.145194053649902,
+                    -9.103519439697266
+                  ],
+                  "children": [
+                    {
+                      "name": "aim_vectorX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 27.59700584411621
+                    },
+                    {
+                      "name": "aim_vectorY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 15.145194053649902
+                    },
+                    {
+                      "name": "aim_vectorZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -9.103519439697266
+                    }
+                  ]
+                },
+                {
+                  "name": "up_axis",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "up_axisX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "up_axisY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "up_axisZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "up_vector",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.5151781439781189,
+                    0.8570831418037415
+                  ],
+                  "children": [
+                    {
+                      "name": "up_vectorX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "up_vectorY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.5151781439781189
+                    },
+                    {
+                      "name": "up_vectorZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.8570831418037415
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "mid_guide",
+              "type": "Locator",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -975.0,
+                  -175.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 27.597006565065488
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 15.145194182255599
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -9.103519854286215
+                    }
+                  ]
+                },
+                {
+                  "name": "rotate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "rotateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rest_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "inherits_transform",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": true
+                },
+                {
+                  "name": "parent",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "self",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "world_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "start_guide",
+              "type": "Locator",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -975.0,
+                  -475.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rotate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "rotateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rest_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "inherits_transform",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": true
+                },
+                {
+                  "name": "parent",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "self",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "world_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixDecompose",
+              "type": "MatrixDecompose",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -775.0,
+                  -475.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "euler",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    -0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "eulerX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "eulerY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -0.0
+                    },
+                    {
+                      "name": "eulerZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "quaternion",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "quaternionX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionW",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "shear",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "shearX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixDecompose3",
+              "type": "MatrixDecompose",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  75.0,
+                  50.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 27.597006565065488
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 15.145194182255599
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -9.103519854286215
+                    }
+                  ]
+                },
+                {
+                  "name": "euler",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    -0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "eulerX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "eulerY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -0.0
+                    },
+                    {
+                      "name": "eulerZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "quaternion",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "quaternionX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionW",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "shear",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "shearX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "normal",
+              "type": "VectorCross",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -325.0,
+                  -225.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input1",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    12.402994155883789,
+                    -15.145194053649902,
+                    9.103519439697266
+                  ],
+                  "children": [
+                    {
+                      "name": "input1X",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 12.402994155883789
+                    },
+                    {
+                      "name": "input1Y",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -15.145194053649902
+                    },
+                    {
+                      "name": "input1Z",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 9.103519439697266
+                    }
+                  ]
+                },
+                {
+                  "name": "input2",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    27.59700584411621,
+                    15.145194053649902,
+                    -9.103519439697266
+                  ],
+                  "children": [
+                    {
+                      "name": "input2X",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 27.59700584411621
+                    },
+                    {
+                      "name": "input2Y",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 15.145194053649902
+                    },
+                    {
+                      "name": "input2Z",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -9.103519439697266
+                    }
+                  ]
+                },
+                {
+                  "name": "normalize",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": true
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.5151781439781189,
+                    0.8570831418037415
+                  ],
+                  "children": [
+                    {
+                      "name": "outputX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "outputY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.5151781439781189
+                    },
+                    {
+                      "name": "outputZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.8570831418037415
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixCompose",
+              "type": "MatrixCompose",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  275.0,
+                  200.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    40.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 40.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "euler",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "eulerX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "eulerY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "eulerZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "quaternion",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "quaternionX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionW",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "shear",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "shearX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    40.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixInverse1",
+              "type": "MatrixInverse",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  475.0,
+                  -75.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -27.597006565065488,
+                    -15.1451941822556,
+                    9.103519854286215,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "b",
+              "type": "VectorSubstract",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -550.0,
+                  -25.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input1",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    40.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "input1X",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 40.0
+                    },
+                    {
+                      "name": "input1Y",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "input1Z",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "input2",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    27.59700584411621,
+                    15.145194053649902,
+                    -9.103519439697266
+                  ],
+                  "children": [
+                    {
+                      "name": "input2X",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 27.59700584411621
+                    },
+                    {
+                      "name": "input2Y",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 15.145194053649902
+                    },
+                    {
+                      "name": "input2Z",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -9.103519439697266
+                    }
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    12.402994155883789,
+                    -15.145194053649902,
+                    9.103519439697266
+                  ],
+                  "children": [
+                    {
+                      "name": "outputX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 12.402994155883789
+                    },
+                    {
+                      "name": "outputY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -15.145194053649902
+                    },
+                    {
+                      "name": "outputZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 9.103519439697266
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixInverse",
+              "type": "MatrixInverse",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  250.0,
+                  -400.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "a",
+              "type": "VectorSubstract",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -550.0,
+                  -350.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input1",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    27.59700584411621,
+                    15.145194053649902,
+                    -9.103519439697266
+                  ],
+                  "children": [
+                    {
+                      "name": "input1X",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 27.59700584411621
+                    },
+                    {
+                      "name": "input1Y",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 15.145194053649902
+                    },
+                    {
+                      "name": "input1Z",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -9.103519439697266
+                    }
+                  ]
+                },
+                {
+                  "name": "input2",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "input2X",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "input2Y",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "input2Z",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    27.59700584411621,
+                    15.145194053649902,
+                    -9.103519439697266
+                  ],
+                  "children": [
+                    {
+                      "name": "outputX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 27.59700584411621
+                    },
+                    {
+                      "name": "outputY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 15.145194053649902
+                    },
+                    {
+                      "name": "outputZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -9.103519439697266
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "end_guide",
+              "type": "Locator",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -975.0,
+                  150.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    40.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 40.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rotate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "rotateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rest_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "inherits_transform",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": true
+                },
+                {
+                  "name": "parent",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "self",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "world_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    40.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    40.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixMultiply1",
+              "type": "MatrixMultiply",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  675.0,
+                  150.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input1",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    40.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "input2",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -27.597006565065488,
+                    -15.1451941822556,
+                    9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    12.402993434934512,
+                    -15.1451941822556,
+                    9.103519854286215,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixDecompose1",
+              "type": "MatrixDecompose",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -775.0,
+                  -175.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 27.597006565065488
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 15.145194182255599
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -9.103519854286215
+                    }
+                  ]
+                },
+                {
+                  "name": "euler",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    -0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "eulerX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "eulerY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -0.0
+                    },
+                    {
+                      "name": "eulerZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "quaternion",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "quaternionX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "quaternionW",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "shear",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "shearX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "shearZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "Aim",
+              "type": "Aim",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -125.0,
+                  -75.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "base_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    27.597006565065488,
+                    15.145194182255599,
+                    -9.103519854286215,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "aim_axis",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "aim_axisX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "aim_axisY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "aim_axisZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "aim_vector",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    12.402994155883789,
+                    -15.145194053649902,
+                    9.103519439697266
+                  ],
+                  "children": [
+                    {
+                      "name": "aim_vectorX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 12.402994155883789
+                    },
+                    {
+                      "name": "aim_vectorY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": -15.145194053649902
+                    },
+                    {
+                      "name": "aim_vectorZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 9.103519439697266
+                    }
+                  ]
+                },
+                {
+                  "name": "up_axis",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "up_axisX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "up_axisY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "up_axisZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "up_vector",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.5151781439781189,
+                    0.8570831418037415
+                  ],
+                  "children": [
+                    {
+                      "name": "up_vectorX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "up_vectorY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.5151781439781189
+                    },
+                    {
+                      "name": "up_vectorZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.8570831418037415
+                    }
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "MatrixInverse2",
+              "type": "MatrixInverse",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  475.0,
+                  75.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "input",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    40.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "output",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -40.0,
+                    -0.0,
+                    -0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            },
+            {
+              "name": "RestSolver_TwoBone_guides_GRP",
+              "type": "Transform",
+              "library": "orodruin-library",
+              "metadata": {
+                "serialization_type": "instance"
+              },
+              "editor": {
+                "position": [
+                  -1425.0,
+                  -200.0
+                ]
+              },
+              "ports": [
+                {
+                  "name": "translate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "translateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "translateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rotate",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "children": [
+                    {
+                      "name": "rotateX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    },
+                    {
+                      "name": "rotateZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 0.0
+                    }
+                  ]
+                },
+                {
+                  "name": "scale",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "children": [
+                    {
+                      "name": "scaleX",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleY",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    },
+                    {
+                      "name": "scaleZ",
+                      "metadata": {
+                        "serialization_type": "instance"
+                      },
+                      "value": 1.0
+                    }
+                  ]
+                },
+                {
+                  "name": "rest_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "inherits_transform",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": true
+                },
+                {
+                  "name": "parent",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "self",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": ""
+                },
+                {
+                  "name": "world_matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "matrix",
+                  "metadata": {
+                    "serialization_type": "instance"
+                  },
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                }
+              ],
+              "graph": {
+                "nodes": [],
+                "connections": []
+              }
+            }
+          ],
+          "connections": [
+            {
+              "source": "end_guide.world_matrix",
+              "target": "MatrixDecompose2.input"
+            },
+            {
+              "source": "MatrixDecompose2.translate",
+              "target": "b.input1"
+            },
+            {
+              "source": "MatrixDecompose2.translate",
+              "target": "MatrixCompose.translate"
+            },
+            {
+              "source": "Aim.output",
+              "target": "MatrixMultiply.input1"
+            },
+            {
+              "source": "MatrixInverse.output",
+              "target": "MatrixMultiply.input2"
+            },
+            {
+              "source": "MatrixMultiply.output",
+              "target": ".mid_matrix"
+            },
+            {
+              "source": "start_guide.world_matrix",
+              "target": "start_aim.base_matrix"
+            },
+            {
+              "source": "start_aim.output",
+              "target": ".start_matrix"
+            },
+            {
+              "source": "start_aim.output",
+              "target": "MatrixInverse.input"
+            },
+            {
+              "source": "a.output",
+              "target": "start_aim.aim_vector"
+            },
+            {
+              "source": "normal.output",
+              "target": "start_aim.up_vector"
+            },
+            {
+              "source": "mid_guide.world_matrix",
+              "target": "MatrixDecompose1.input"
+            },
+            {
+              "source": "mid_guide.world_matrix",
+              "target": "Aim.base_matrix"
+            },
+            {
+              "source": "start_guide.world_matrix",
+              "target": "MatrixDecompose.input"
+            },
+            {
+              "source": "MatrixDecompose.translate",
+              "target": "a.input2"
+            },
+            {
+              "source": "Aim.output",
+              "target": "MatrixDecompose3.input"
+            },
+            {
+              "source": "MatrixDecompose3.quaternion",
+              "target": "MatrixCompose.quaternion"
+            },
+            {
+              "source": "b.output",
+              "target": "normal.input1"
+            },
+            {
+              "source": "a.output",
+              "target": "normal.input2"
+            },
+            {
+              "source": "normal.output",
+              "target": "Aim.up_vector"
+            },
+            {
+              "source": "MatrixCompose.output",
+              "target": "MatrixMultiply1.input1"
+            },
+            {
+              "source": "Aim.output",
+              "target": "MatrixInverse1.input"
+            },
+            {
+              "source": "MatrixInverse1.output",
+              "target": "MatrixMultiply1.input2"
+            },
+            {
+              "source": "MatrixDecompose1.translate",
+              "target": "b.input2"
+            },
+            {
+              "source": "b.output",
+              "target": "Aim.aim_vector"
+            },
+            {
+              "source": "MatrixDecompose1.translate",
+              "target": "a.input1"
+            },
+            {
+              "source": "MatrixMultiply1.output",
+              "target": ".end_matrix"
+            },
+            {
+              "source": "MatrixInverse.output",
+              "target": ".start_inverse_matrix"
+            },
+            {
+              "source": "MatrixInverse1.output",
+              "target": ".mid_inverse_matrix"
+            },
+            {
+              "source": "MatrixCompose.output",
+              "target": "MatrixInverse2.input"
+            },
+            {
+              "source": "MatrixInverse2.output",
+              "target": ".end_inverse_matrix"
+            },
+            {
+              "source": ".aim_axis",
+              "target": "start_aim.aim_axis"
+            },
+            {
+              "source": ".up_axis",
+              "target": "start_aim.up_axis"
+            },
+            {
+              "source": ".aim_axis",
+              "target": "Aim.aim_axis"
+            },
+            {
+              "source": ".up_axis",
+              "target": "Aim.up_axis"
+            },
+            {
+              "source": "RestSolver_TwoBone_guides_GRP.self",
+              "target": "start_guide.parent"
+            },
+            {
+              "source": "RestSolver_TwoBone_guides_GRP.self",
+              "target": "mid_guide.parent"
+            },
+            {
+              "source": "RestSolver_TwoBone_guides_GRP.self",
+              "target": "end_guide.parent"
+            },
+            {
+              "source": ".guides_group",
+              "target": "RestSolver_TwoBone_guides_GRP.parent"
+            }
+          ]
+        }
+      },
+      {
+        "name": "end_JNT",
+        "type": "Joint",
+        "library": "orodruin-library",
+        "metadata": {
+          "serialization_type": "instance"
+        },
+        "editor": {
+          "position": [
+            1175.0,
+            425.0
+          ]
+        },
+        "ports": [
+          {
+            "name": "translate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "translateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "rotate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "rotateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "rotateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": -0.0
+              },
+              {
+                "name": "rotateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "scale",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "scaleX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "rest_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              12.402993434934512,
+              -15.1451941822556,
+              9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "inherits_transform",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": true
+          },
+          {
+            "name": "parent",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": ""
+          },
+          {
+            "name": "self",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": ""
+          },
+          {
+            "name": "world_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              40.0,
+              -1.7763568394002505e-15,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "graph": {
+          "nodes": [],
+          "connections": []
+        }
+      },
+      {
+        "name": "mid_JNT",
+        "type": "Joint",
+        "library": "orodruin-library",
+        "metadata": {
+          "serialization_type": "instance"
+        },
+        "editor": {
+          "position": [
+            975.0,
+            125.0
+          ]
+        },
+        "ports": [
+          {
+            "name": "translate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "translateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "rotate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "rotateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "rotateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": -0.0
+              },
+              {
+                "name": "rotateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "scale",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "scaleX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "rest_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              27.597006565065488,
+              15.145194182255599,
+              -9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "inherits_transform",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": true
+          },
+          {
+            "name": "parent",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": ""
+          },
+          {
+            "name": "self",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": ""
+          },
+          {
+            "name": "world_matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              27.597006565065488,
+              15.145194182255599,
+              -9.103519854286215,
+              1.0
+            ]
+          },
+          {
+            "name": "matrix",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "graph": {
+          "nodes": [],
+          "connections": []
+        }
+      },
+      {
+        "name": "MatrixDecompose1",
+        "type": "MatrixDecompose",
+        "library": "orodruin-library",
+        "metadata": {
+          "serialization_type": "instance"
+        },
+        "editor": {
+          "position": [
+            750.0,
+            200.0
+          ]
+        },
+        "ports": [
+          {
+            "name": "input",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "translate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "translateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "euler",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "eulerX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "eulerY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": -0.0
+              },
+              {
+                "name": "eulerZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "quaternion",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "quaternionX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionW",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "scale",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "scaleX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "shear",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "shearX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "shearY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "shearZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          }
+        ],
+        "graph": {
+          "nodes": [],
+          "connections": []
+        }
+      },
+      {
+        "name": "MatrixDecompose2",
+        "type": "MatrixDecompose",
+        "library": "orodruin-library",
+        "metadata": {
+          "serialization_type": "instance"
+        },
+        "editor": {
+          "position": [
+            950.0,
+            500.0
+          ]
+        },
+        "ports": [
+          {
+            "name": "input",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "translate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "translateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "euler",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "eulerX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "eulerY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": -0.0
+              },
+              {
+                "name": "eulerZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "quaternion",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "quaternionX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionW",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "scale",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "scaleX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "shear",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "shearX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "shearY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "shearZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          }
+        ],
+        "graph": {
+          "nodes": [],
+          "connections": []
+        }
+      },
+      {
+        "name": "MatrixDecompose",
+        "type": "MatrixDecompose",
+        "library": "orodruin-library",
+        "metadata": {
+          "serialization_type": "instance"
+        },
+        "editor": {
+          "position": [
+            550.0,
+            -75.0
+          ]
+        },
+        "ports": [
+          {
+            "name": "input",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "translate",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "translateX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "translateZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "euler",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "eulerX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "eulerY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": -0.0
+              },
+              {
+                "name": "eulerZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "name": "quaternion",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "quaternionX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "quaternionW",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "scale",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "children": [
+              {
+                "name": "scaleX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              },
+              {
+                "name": "scaleZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "name": "shear",
+            "metadata": {
+              "serialization_type": "instance"
+            },
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "children": [
+              {
+                "name": "shearX",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "shearY",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              },
+              {
+                "name": "shearZ",
+                "metadata": {
+                  "serialization_type": "instance"
+                },
+                "value": 0.0
+              }
+            ]
+          }
+        ],
+        "graph": {
+          "nodes": [],
+          "connections": []
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "MatrixDecompose.translate",
+        "target": "start_JNT.translate"
+      },
+      {
+        "source": "MatrixDecompose.euler",
+        "target": "start_JNT.rotate"
+      },
+      {
+        "source": "MatrixDecompose.scale",
+        "target": "start_JNT.scale"
+      },
+      {
+        "source": "RestSolver_TwoBone.start_matrix",
+        "target": "start_JNT.rest_matrix"
+      },
+      {
+        "source": "start_JNT.self",
+        "target": "mid_JNT.parent"
+      },
+      {
+        "source": "RestSolver_TwoBone.start_matrix",
+        "target": "Rig_FK.start_guide"
+      },
+      {
+        "source": "RestSolver_TwoBone.mid_matrix",
+        "target": "Rig_FK.mid_guide"
+      },
+      {
+        "source": "RestSolver_TwoBone.end_matrix",
+        "target": "Rig_FK.end_guide"
+      },
+      {
+        "source": "Rig_FK.start_local_matrix",
+        "target": "MatrixDecompose.input"
+      },
+      {
+        "source": "Rig_FK.mid_local_matrix",
+        "target": "MatrixDecompose1.input"
+      },
+      {
+        "source": "Rig_FK.end_local_matrix",
+        "target": "MatrixDecompose2.input"
+      },
+      {
+        "source": "RestSolver_TwoBone.mid_matrix",
+        "target": "mid_JNT.rest_matrix"
+      },
+      {
+        "source": "RestSolver_TwoBone.end_matrix",
+        "target": "end_JNT.rest_matrix"
+      },
+      {
+        "source": "MatrixDecompose2.translate",
+        "target": "end_JNT.translate"
+      },
+      {
+        "source": "MatrixDecompose2.euler",
+        "target": "end_JNT.rotate"
+      },
+      {
+        "source": "MatrixDecompose2.scale",
+        "target": "end_JNT.scale"
+      },
+      {
+        "source": "mid_JNT.self",
+        "target": "end_JNT.parent"
+      },
+      {
+        "source": "MatrixDecompose1.translate",
+        "target": "mid_JNT.translate"
+      },
+      {
+        "source": "MatrixDecompose1.euler",
+        "target": "mid_JNT.rotate"
+      },
+      {
+        "source": "MatrixDecompose1.scale",
+        "target": "mid_JNT.scale"
+      },
+      {
+        "source": ".aim_axis",
+        "target": "RestSolver_TwoBone.aim_axis"
+      },
+      {
+        "source": ".up_axis",
+        "target": "RestSolver_TwoBone.up_axis"
+      },
+      {
+        "source": ".parent_joint",
+        "target": "start_JNT.parent"
+      },
+      {
+        "source": ".guides_group",
+        "target": "RestSolver_TwoBone.guides_group"
+      },
+      {
+        "source": ".parent_control",
+        "target": "Rig_FK.parent_control"
+      }
+    ]
+  }
+}
