@@ -48,5 +48,5 @@ class Locator(OMNode):
                 parent_maya_node.add_child(self._input_node)
 
     def on_connection_removed(self, port: Port) -> None:
-        if port.name() == "parent":
-            cmds.parent(self._input_node.name(), world=True)
+        if port.name() == "parent" and self._input_node.parent():
+            cmds.parent(self._input_node.path(), world=True)
