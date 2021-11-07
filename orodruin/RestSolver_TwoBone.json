@@ -12,7 +12,8 @@
         "serialization_type": "definition"
       },
       "direction": "output",
-      "type": "Matrix4"
+      "type": "Matrix4",
+      "default_value": [ 0.8944271909999157, 0.44721359549995815, -7.526829610980901e-19, 0.0, 0.44721359549995815, -0.894427190999916, 1.256530961034526e-16, 0.0, 5.552055278751835e-17, -1.127241558415578e-16, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
     },
     {
       "name": "mid_matrix",
@@ -20,7 +21,8 @@
         "serialization_type": "definition"
       },
       "direction": "output",
-      "type": "Matrix4"
+      "type": "Matrix4",
+      "default_value": [ 0.5999999999999998, 0.8000000000000002, 9.931818414500516e-17, 0.0, -0.8000000000000005, 0.5999999999999996, -4.96590920725026e-17, 0.0, -9.931818414500519e-17, -4.965909207250261e-17, 1.0, 0.0, 22.360679774997898, 7.105427357601002e-15, -1.683050266521097e-17, 1.0 ]
     },
     {
       "name": "end_matrix",
@@ -28,7 +30,8 @@
         "serialization_type": "definition"
       },
       "direction": "output",
-      "type": "Matrix4"
+      "type": "Matrix4",
+      "default_value": [ 1.0000000000000002, 5.551115123125783e-17, 7.526829610980899e-19, 0.0, -1.1102230246251565e-16, 1.0, 3.188416188717289e-18, 0.0, -7.526829610980776e-19, -3.1884161887172644e-18, 1.0, 0.0, 22.360679774997898, -7.105427357601002e-15, 1.6830502665210575e-17, 1.0 ]
     },
     {
       "name": "start_inverse_matrix",
@@ -36,7 +39,8 @@
         "serialization_type": "definition"
       },
       "direction": "output",
-      "type": "Matrix4"
+      "type": "Matrix4",
+      "default_value": [ 0.894427190999916, 0.4472135954999581, 5.552055278751835e-17, 0.0, 0.4472135954999581, -0.8944271909999156, -1.127241558415578e-16, 0.0, -7.526829610980837e-19, 1.2565309610345259e-16, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
     },
     {
       "name": "mid_inverse_matrix",
@@ -44,7 +48,8 @@
         "serialization_type": "definition"
       },
       "direction": "output",
-      "type": "Matrix4"
+      "type": "Matrix4",
+      "default_value": [ 0.894427190999916, -0.44721359549995815, -5.552055278751836e-17, 0.0, -0.4472135954999581, -0.8944271909999156, -1.127241558415578e-16, 0.0, 7.526829610980591e-19, 1.2565309610345259e-16, -1.0, 0.0, -13.416407864998737, 17.88854381999832, 2.237652614165945e-15, 1.0 ]
     },
     {
       "name": "end_inverse_matrix",
@@ -52,7 +57,8 @@
         "serialization_type": "definition"
       },
       "direction": "output",
-      "type": "Matrix4"
+      "type": "Matrix4",
+      "default_value": [ 0.8944271909999157, -0.44721359549995815, -5.4767869826420293e-17, 0.0, -0.44721359549995815, -0.8944271909999155, -1.0953573965284051e-16, 0.0, -0.0, 1.2246467991473532e-16, -1.0, 0.0, -35.77708763999663, 17.888543819998326, 2.1907147930568115e-15, 1.0 ]
     },
     {
       "name": "aim_axis",
@@ -61,6 +67,7 @@
       },
       "direction": "input",
       "type": "Vector3",
+      "default_value": [ 1.0, 0.0, 0.0 ],
       "children": [
         {
           "name": "aim_axisX",
@@ -68,7 +75,8 @@
             "serialization_type": "definition"
           },
           "direction": "input",
-          "type": "float"
+          "type": "float",
+          "default_value": 1.0
         },
         {
           "name": "aim_axisY",
@@ -76,7 +84,8 @@
             "serialization_type": "definition"
           },
           "direction": "input",
-          "type": "float"
+          "type": "float",
+          "default_value": 0.0
         },
         {
           "name": "aim_axisZ",
@@ -84,7 +93,8 @@
             "serialization_type": "definition"
           },
           "direction": "input",
-          "type": "float"
+          "type": "float",
+          "default_value": 0.0
         } ]
     },
     {
@@ -94,6 +104,7 @@
       },
       "direction": "input",
       "type": "Vector3",
+      "default_value": [ 0.0, 0.0, -1.0 ],
       "children": [
         {
           "name": "up_axisX",
@@ -101,7 +112,8 @@
             "serialization_type": "definition"
           },
           "direction": "input",
-          "type": "float"
+          "type": "float",
+          "default_value": 0.0
         },
         {
           "name": "up_axisY",
@@ -109,7 +121,8 @@
             "serialization_type": "definition"
           },
           "direction": "input",
-          "type": "float"
+          "type": "float",
+          "default_value": 0.0
         },
         {
           "name": "up_axisZ",
@@ -117,7 +130,8 @@
             "serialization_type": "definition"
           },
           "direction": "input",
-          "type": "float"
+          "type": "float",
+          "default_value": -1.0
         } ]
     },
     {
@@ -126,7 +140,8 @@
         "serialization_type": "definition"
       },
       "direction": "input",
-      "type": "Reference"
+      "type": "Reference",
+      "default_value": ""
     } ],
   "graph": {
     "nodes": [
@@ -321,21 +336,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 0.8944271909999157, -0.44721359549995815, 7.526829610980901e-19, 0.0, -0.44721359549995815, -0.894427190999916, 1.256530961034526e-16, 0.0, -5.552055278751835e-17, -1.127241558415578e-16, -1.0, 0.0, 20.0, 10.0, 0.0, 1.0 ]
           },
           {
             "name": "input2",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.894427190999916, 0.4472135954999581, 5.552055278751835e-17, 0.0, 0.4472135954999581, -0.8944271909999156, -1.127241558415578e-16, 0.0, -7.526829610980837e-19, 1.2565309610345259e-16, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 0.5999999999999998, 0.8000000000000002, 9.931818414500516e-17, 0.0, -0.8000000000000005, 0.5999999999999996, -4.96590920725026e-17, 0.0, -9.931818414500519e-17, -4.965909207250261e-17, 1.0, 0.0, 22.360679774997898, 7.105427357601002e-15, -1.683050266521097e-17, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -365,21 +380,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.8944271909999157, 0.44721359549995815, -7.526829610980901e-19, 0.0, 0.44721359549995815, -0.894427190999916, 1.256530961034526e-16, 0.0, 5.552055278751835e-17, -1.127241558415578e-16, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "aim_axis",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "aim_axisX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "aim_axisY",
@@ -401,28 +416,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 27.59700584411621, 15.145194053649902, -9.103519439697266 ],
+            "value": [ 20.0, 10.0, 0.0 ],
             "children": [
               {
                 "name": "aim_vectorX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 27.59700584411621
+                "value": 20.0
               },
               {
                 "name": "aim_vectorY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 15.145194053649902
+                "value": 10.0
               },
               {
                 "name": "aim_vectorZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -9.103519439697266
+                "value": 0.0
               } ]
           },
           {
@@ -430,7 +445,7 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, 0.0, -1.0 ],
             "children": [
               {
                 "name": "up_axisX",
@@ -451,7 +466,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -1.0
               } ]
           },
           {
@@ -459,28 +474,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.5151781439781189, 0.8570831418037415 ],
+            "value": [ -0.0, 0.0, 1.0 ],
             "children": [
               {
                 "name": "up_vectorX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "up_vectorY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.5151781439781189
+                "value": 0.0
               },
               {
                 "name": "up_vectorZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.8570831418037415
+                "value": 1.0
               } ]
           } ],
         "graph": {
@@ -504,28 +519,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 27.597006565065488, 15.145194182255599, -9.103519854286215 ],
+            "value": [ 20.0, 10.0, 0.0 ],
             "children": [
               {
                 "name": "translateX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 27.597006565065488
+                "value": 20.0
               },
               {
                 "name": "translateY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 15.145194182255599
+                "value": 10.0
               },
               {
                 "name": "translateZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -9.103519854286215
+                "value": 0.0
               } ]
           },
           {
@@ -619,14 +634,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 10.0, 0.0, 1.0 ]
           },
           {
             "name": "matrix",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 10.0, 0.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -969,35 +984,35 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 0.8944271909999157, -0.44721359549995815, 7.526829610980901e-19, 0.0, -0.44721359549995815, -0.894427190999916, 1.256530961034526e-16, 0.0, -5.552055278751835e-17, -1.127241558415578e-16, -1.0, 0.0, 20.0, 10.0, 0.0, 1.0 ]
           },
           {
             "name": "translate",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 27.597006565065488, 15.145194182255599, -9.103519854286215 ],
+            "value": [ 20.0, 10.0, 0.0 ],
             "children": [
               {
                 "name": "translateX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 27.597006565065488
+                "value": 20.0
               },
               {
                 "name": "translateY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 15.145194182255599
+                "value": 10.0
               },
               {
                 "name": "translateZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -9.103519854286215
+                "value": 0.0
               } ]
           },
           {
@@ -1005,28 +1020,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, -0.0, 0.0 ],
+            "value": [ 3.141592653589793, -7.526829610980901e-19, -0.46364760900080637 ],
             "children": [
               {
                 "name": "eulerX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 3.141592653589793
               },
               {
                 "name": "eulerY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -0.0
+                "value": -7.526829610980901e-19
               },
               {
                 "name": "eulerZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.46364760900080637
               } ]
           },
           {
@@ -1034,35 +1049,35 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ 0.9732489894677301, -0.2297529205473613, -1.406830893715411e-17, 5.959431298625259e-17 ],
             "children": [
               {
                 "name": "quaternionX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 0.9732489894677301
               },
               {
                 "name": "quaternionY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.2297529205473613
               },
               {
                 "name": "quaternionZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -1.406830893715411e-17
               },
               {
                 "name": "quaternionW",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 1.0
+                "value": 5.959431298625259e-17
               } ]
           },
           {
@@ -1070,21 +1085,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 1.0, 1.0 ],
+            "value": [ 0.9999999999999999, 1.0000000000000002, 1.0 ],
             "children": [
               {
                 "name": "scaleX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 1.0
+                "value": 0.9999999999999999
               },
               {
                 "name": "scaleY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 1.0
+                "value": 1.0000000000000002
               },
               {
                 "name": "scaleZ",
@@ -1144,28 +1159,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 12.402994155883789, -15.145194053649902, 9.103519439697266 ],
+            "value": [ 20.0, -10.0, 0.0 ],
             "children": [
               {
                 "name": "input1X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 12.402994155883789
+                "value": 20.0
               },
               {
                 "name": "input1Y",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -15.145194053649902
+                "value": -10.0
               },
               {
                 "name": "input1Z",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 9.103519439697266
+                "value": 0.0
               } ]
           },
           {
@@ -1173,28 +1188,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 27.59700584411621, 15.145194053649902, -9.103519439697266 ],
+            "value": [ 20.0, 10.0, 0.0 ],
             "children": [
               {
                 "name": "input2X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 27.59700584411621
+                "value": 20.0
               },
               {
                 "name": "input2Y",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 15.145194053649902
+                "value": 10.0
               },
               {
                 "name": "input2Z",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -9.103519439697266
+                "value": 0.0
               } ]
           },
           {
@@ -1209,28 +1224,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.5151781439781189, 0.8570831418037415 ],
+            "value": [ -0.0, 0.0, 1.0 ],
             "children": [
               {
                 "name": "outputX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "outputY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.5151781439781189
+                "value": 0.0
               },
               {
                 "name": "outputZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.8570831418037415
+                "value": 1.0
               } ]
           } ],
         "graph": {
@@ -1312,35 +1327,35 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0, 1.0 ],
+            "value": [ 0.9732489894677301, -0.2297529205473613, -1.406830893715411e-17, 5.959431298625259e-17 ],
             "children": [
               {
                 "name": "quaternionX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 0.9732489894677301
               },
               {
                 "name": "quaternionY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.2297529205473613
               },
               {
                 "name": "quaternionZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -1.406830893715411e-17
               },
               {
                 "name": "quaternionW",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 1.0
+                "value": 5.959431298625259e-17
               } ]
           },
           {
@@ -1406,7 +1421,7 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 40.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.8944271909999157, -0.44721359549995826, 6.162975822039156e-33, 0.0, -0.44721359549995826, -0.894427190999916, 1.2246467991473535e-16, 0.0, -5.4767869826420306e-17, -1.0953573965284054e-16, -1.0, 0.0, 40.0, 0.0, 0.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -1429,14 +1444,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 0.8944271909999157, -0.44721359549995815, 7.526829610980901e-19, 0.0, -0.44721359549995815, -0.894427190999916, 1.256530961034526e-16, 0.0, -5.552055278751835e-17, -1.127241558415578e-16, -1.0, 0.0, 20.0, 10.0, 0.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -27.597006565065488, -15.1451941822556, 9.103519854286215, 1.0 ]
+            "value": [ 0.894427190999916, -0.44721359549995815, -5.552055278751836e-17, 0.0, -0.4472135954999581, -0.8944271909999156, -1.127241558415578e-16, 0.0, 7.526829610980591e-19, 1.2565309610345259e-16, -1.0, 0.0, -13.416407864998737, 17.88854381999832, 2.237652614165945e-15, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -1488,28 +1503,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 27.59700584411621, 15.145194053649902, -9.103519439697266 ],
+            "value": [ 20.0, 10.0, 0.0 ],
             "children": [
               {
                 "name": "input2X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 27.59700584411621
+                "value": 20.0
               },
               {
                 "name": "input2Y",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 15.145194053649902
+                "value": 10.0
               },
               {
                 "name": "input2Z",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -9.103519439697266
+                "value": 0.0
               } ]
           },
           {
@@ -1517,28 +1532,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 12.402994155883789, -15.145194053649902, 9.103519439697266 ],
+            "value": [ 20.0, -10.0, 0.0 ],
             "children": [
               {
                 "name": "outputX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 12.402994155883789
+                "value": 20.0
               },
               {
                 "name": "outputY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -15.145194053649902
+                "value": -10.0
               },
               {
                 "name": "outputZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 9.103519439697266
+                "value": 0.0
               } ]
           } ],
         "graph": {
@@ -1562,14 +1577,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.8944271909999157, 0.44721359549995815, -7.526829610980901e-19, 0.0, 0.44721359549995815, -0.894427190999916, 1.256530961034526e-16, 0.0, 5.552055278751835e-17, -1.127241558415578e-16, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.894427190999916, 0.4472135954999581, 5.552055278751835e-17, 0.0, 0.4472135954999581, -0.8944271909999156, -1.127241558415578e-16, 0.0, -7.526829610980837e-19, 1.2565309610345259e-16, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -1592,28 +1607,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 27.59700584411621, 15.145194053649902, -9.103519439697266 ],
+            "value": [ 20.0, 10.0, 0.0 ],
             "children": [
               {
                 "name": "input1X",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 27.59700584411621
+                "value": 20.0
               },
               {
                 "name": "input1Y",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 15.145194053649902
+                "value": 10.0
               },
               {
                 "name": "input1Z",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -9.103519439697266
+                "value": 0.0
               } ]
           },
           {
@@ -1650,28 +1665,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 27.59700584411621, 15.145194053649902, -9.103519439697266 ],
+            "value": [ 20.0, 10.0, 0.0 ],
             "children": [
               {
                 "name": "outputX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 27.59700584411621
+                "value": 20.0
               },
               {
                 "name": "outputY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 15.145194053649902
+                "value": 10.0
               },
               {
                 "name": "outputZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -9.103519439697266
+                "value": 0.0
               } ]
           } ],
         "graph": {
@@ -1840,21 +1855,21 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 40.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.8944271909999157, -0.44721359549995826, 6.162975822039156e-33, 0.0, -0.44721359549995826, -0.894427190999916, 1.2246467991473535e-16, 0.0, -5.4767869826420306e-17, -1.0953573965284054e-16, -1.0, 0.0, 40.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "input2",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -27.597006565065488, -15.1451941822556, 9.103519854286215, 1.0 ]
+            "value": [ 0.894427190999916, -0.44721359549995815, -5.552055278751836e-17, 0.0, -0.4472135954999581, -0.8944271909999156, -1.127241558415578e-16, 0.0, 7.526829610980591e-19, 1.2565309610345259e-16, -1.0, 0.0, -13.416407864998737, 17.88854381999832, 2.237652614165945e-15, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 12.402993434934512, -15.1451941822556, 9.103519854286215, 1.0 ]
+            "value": [ 1.0000000000000002, 5.551115123125783e-17, 7.526829610980899e-19, 0.0, -1.1102230246251565e-16, 1.0, 3.188416188717289e-18, 0.0, -7.526829610980776e-19, -3.1884161887172644e-18, 1.0, 0.0, 22.360679774997898, -7.105427357601002e-15, 1.6830502665210575e-17, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
@@ -1877,35 +1892,35 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 10.0, 0.0, 1.0 ]
           },
           {
             "name": "translate",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 27.597006565065488, 15.145194182255599, -9.103519854286215 ],
+            "value": [ 20.0, 10.0, 0.0 ],
             "children": [
               {
                 "name": "translateX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 27.597006565065488
+                "value": 20.0
               },
               {
                 "name": "translateY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 15.145194182255599
+                "value": 10.0
               },
               {
                 "name": "translateZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -9.103519854286215
+                "value": 0.0
               } ]
           },
           {
@@ -2052,28 +2067,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 20.0, 10.0, 0.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 27.597006565065488, 15.145194182255599, -9.103519854286215, 1.0 ]
+            "value": [ 0.8944271909999157, -0.44721359549995815, 7.526829610980901e-19, 0.0, -0.44721359549995815, -0.894427190999916, 1.256530961034526e-16, 0.0, -5.552055278751835e-17, -1.127241558415578e-16, -1.0, 0.0, 20.0, 10.0, 0.0, 1.0 ]
           },
           {
             "name": "aim_axis",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 1.0, 0.0, 0.0 ],
             "children": [
               {
                 "name": "aim_axisX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "name": "aim_axisY",
@@ -2095,28 +2110,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 12.402994155883789, -15.145194053649902, 9.103519439697266 ],
+            "value": [ 20.0, -10.0, 0.0 ],
             "children": [
               {
                 "name": "aim_vectorX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 12.402994155883789
+                "value": 20.0
               },
               {
                 "name": "aim_vectorY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": -15.145194053649902
+                "value": -10.0
               },
               {
                 "name": "aim_vectorZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 9.103519439697266
+                "value": 0.0
               } ]
           },
           {
@@ -2124,7 +2139,7 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.0, 0.0 ],
+            "value": [ 0.0, 0.0, -1.0 ],
             "children": [
               {
                 "name": "up_axisX",
@@ -2145,7 +2160,7 @@
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -1.0
               } ]
           },
           {
@@ -2153,28 +2168,28 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 0.0, 0.5151781439781189, 0.8570831418037415 ],
+            "value": [ -0.0, 0.0, 1.0 ],
             "children": [
               {
                 "name": "up_vectorX",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.0
+                "value": -0.0
               },
               {
                 "name": "up_vectorY",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.5151781439781189
+                "value": 0.0
               },
               {
                 "name": "up_vectorZ",
                 "metadata": {
                   "serialization_type": "instance"
                 },
-                "value": 0.8570831418037415
+                "value": 1.0
               } ]
           } ],
         "graph": {
@@ -2198,14 +2213,14 @@
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 40.0, 0.0, 0.0, 1.0 ]
+            "value": [ 0.8944271909999157, -0.44721359549995826, 6.162975822039156e-33, 0.0, -0.44721359549995826, -0.894427190999916, 1.2246467991473535e-16, 0.0, -5.4767869826420306e-17, -1.0953573965284054e-16, -1.0, 0.0, 40.0, 0.0, 0.0, 1.0 ]
           },
           {
             "name": "output",
             "metadata": {
               "serialization_type": "instance"
             },
-            "value": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -40.0, -0.0, -0.0, 1.0 ]
+            "value": [ 0.8944271909999157, -0.44721359549995815, -5.4767869826420293e-17, 0.0, -0.44721359549995815, -0.8944271909999155, -1.0953573965284051e-16, 0.0, -0.0, 1.2246467991473532e-16, -1.0, 0.0, -35.77708763999663, 17.888543819998326, 2.1907147930568115e-15, 1.0 ]
           } ],
         "graph": {
           "nodes": [],
